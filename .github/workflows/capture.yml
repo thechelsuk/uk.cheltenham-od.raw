@@ -1,0 +1,59 @@
+name: Capture
+
+# Saves each source's raw download (capture.py) and commits what changed.
+# The pi-watchdog Worker on Cloudflare starts this every 15 minutes; the
+# hourly schedule is a backup in case that stops.
+
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: "41 * * * *"
+
+permissions:
+    contents: write
+
+concurrency:
+    group: capture
+    cancel-in-progress: false
+
+jobs:
+    capture:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        steps:
+            - uses: actions/checkout@v4
+
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+
+            - name: Capture
+              id: capture
+              continue-on-error: true
+              env:
+                  FUEL_PROXY_URL: https://pi-watchdog.cloudflare-10f.workers.dev/raw/fuel.csv
+                  FUEL_PROXY_TOKEN: ${{ secrets.FUEL_PROXY_TOKEN }}
+                  NAT_HIGH_KEY: ${{ secrets.NAT_HIGH_KEY }}
+              run: python capture.py
+
+            - name: Commit what changed
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add sources status.json
+                  if git diff --cached --quiet; then
+                      echo "Nothing changed"
+                      exit 0
+                  fi
+                  git commit -q -m "Capture $(date -u '+%Y-%m-%d %H:%M') UTC"
+                  for attempt in 1 2 3; do
+                      git pull -q --rebase && git push -q && exit 0
+                      sleep 5
+                  done
+                  exit 1
+
+            - name: Fail if a source failed
+              if: steps.capture.outcome == 'failure'
+              run: |
+                  echo "::error::A capture failed; see the Capture step and status.json"
+                  exit 1
