@@ -1,0 +1,24 @@
+name: Test fuel CSV download
+
+# One-off check: can a GitHub runner download the public Fuel Finder CSV?
+# Makes a single request and saves nothing.
+
+on:
+    workflow_dispatch:
+
+permissions:
+    contents: read
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Download once
+              run: |
+                  code=$(curl -sS -o fuel.csv -w "%{http_code}" \
+                    -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+                    -e "https://www.gov.uk/guidance/access-fuel-price-data" \
+                    "https://www.fuel-finder.service.gov.uk/internal/v1.0.2/csv/get-latest-fuel-prices-csv")
+                  echo "HTTP $code, $(wc -c < fuel.csv) bytes, $(wc -l < fuel.csv) lines"
+                  head -c 300 fuel.csv; echo
+                  test "$code" = 200
