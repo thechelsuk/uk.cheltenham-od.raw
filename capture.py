@@ -141,11 +141,41 @@ def cut_flood(raw):
     return to_json({"items": items})
 
 
-def cut_warnings(raw):
-    """The Met Office South West warnings RSS, without its build and publish
-    times, which change on every call."""
+def cut_feed_times(raw):
+    """An RSS feed without the channel's build and publish times, which change
+    on every call. Each item keeps its own."""
     text = raw.decode("utf-8")
-    return re.sub(r"\s*<(lastBuildDate|pubDate)>[^<]*</\1>", "", text, count=2)
+    if "<rss" not in text[:500]:
+        raise RuntimeError("not an RSS feed")
+    channel_end = text.find("<item")
+    head, rest = (text, "") if channel_end == -1 else (text[:channel_end], text[channel_end:])
+    return re.sub(r"\s*<(lastBuildDate|pubDate)>[^<]*</\1>", "", head) + rest
+
+
+def cut_warnings(raw):
+    """The Met Office South West warnings RSS."""
+    return cut_feed_times(raw)
+
+
+def cut_overflows(raw):
+    """Severn Trent storm overflows within RADIUS_MILES, as GeoJSON features."""
+    body = json.loads(raw)
+    if "features" not in body:
+        raise RuntimeError(f"no features in the storm overflow response: {str(body)[:200]}")
+    features = sorted(body["features"], key=lambda f: json.dumps(f.get("properties"), sort_keys=True))
+    return to_json({"features": features})
+
+
+def cut_fire_severity(squares_raw, issued_raw):
+    """The Fire Severity Index for each 10 km square within RADIUS_MILES and
+    each forecast day, with when the Met Office issued it."""
+    squares, issued = json.loads(squares_raw), json.loads(issued_raw)
+    for body in (squares, issued):
+        if "error" in body:
+            raise RuntimeError(f"Fire Severity Index query failed: {body['error']}")
+    rows = sorted((f["attributes"] for f in squares.get("features", [])),
+                  key=lambda a: (str(a.get("square_reference_pk")), a.get("data_date_offset_pk") or 0))
+    return to_json({"issued": [f["attributes"] for f in issued.get("features", [])], "squares": rows})
 
 
 def cut_toilets(raw):
@@ -187,6 +217,32 @@ def fetch_closures():
     return cut_closures(raw)
 
 
+def arcgis(url, params):
+    return get(f"{url}?{urllib.parse.urlencode(params)}")
+
+
+def fetch_overflows():
+    return cut_overflows(arcgis(
+        "https://services1.arcgis.com/NO7lTIlnxRMMG9Gw/arcgis/rest/services/"
+        "Severn_Trent_Water_Storm_Overflow_Activity/FeatureServer/0/query", {
+            "where": "1=1", "outFields": "*", "f": "geojson",
+            "geometry": json.dumps({"x": CENTRE[1], "y": CENTRE[0], "spatialReference": {"wkid": 4326}}),
+            "geometryType": "esriGeometryPoint", "inSR": 4326, "distance": RADIUS_MILES,
+            "units": "esriSRUnit_StatuteMile", "spatialRel": "esriSpatialRelIntersects"}))
+
+
+FSI = "https://services.arcgis.com/JJzESW51TqeY9uat/arcgis/rest/services/OASYS_FSI_PRD_VIEW/FeatureServer"
+
+
+def fetch_fire_severity():
+    squares = arcgis(f"{FSI}/0/query", {
+        "geometry": f"{CENTRE[1]},{CENTRE[0]}", "geometryType": "esriGeometryPoint", "inSR": 4326,
+        "distance": round(RADIUS_MILES * 1609.344), "units": "esriSRUnit_Meter",
+        "spatialRel": "esriSpatialRelIntersects", "outFields": "*", "returnGeometry": "false", "f": "json"})
+    issued = arcgis(f"{FSI}/1/query", {"where": "language='DEFAULT'", "outFields": "*", "f": "json"})
+    return cut_fire_severity(squares, issued)
+
+
 def fetch_toilets():
     page = get("https://www.toiletmap.org.uk/dataset").decode("utf-8")
     links = re.findall(r'href=["\']([^"\']*?/exports/[^"\']*?\.json[^"\']*)["\']', page)
@@ -209,6 +265,10 @@ SOURCES = {
     "met-office-warnings": ("south-west.xml", lambda: cut_warnings(get(
         "https://www.metoffice.gov.uk/public/data/PWSCache/WarningsRSS/Region/sw"))),
     "toilet-map": ("toilets.json", fetch_toilets),
+    "severn-trent-storm-overflows": ("overflows.json", fetch_overflows),
+    "fire-severity-index": ("fire-severity.json", fetch_fire_severity),
+    "gcc-school-closures": ("closures.xml", lambda: cut_feed_times(get(
+        "https://www.gloucestershire.gov.uk/api/pcg-emergency-school-closures/rss-feed/get"))),
 }
 
 # Sources that change at most daily: captured until they succeed each day,
@@ -229,10 +289,11 @@ def update(record, ok, now, error):
 def save(source_id, filename, text):
     """Write the file only if it changed. Returns True when it did."""
     path = ROOT / "sources" / source_id / filename
-    if path.exists() and path.read_text(encoding="utf-8") == text:
+    data = text.encode("utf-8")  # compared as bytes, so Windows line endings in a feed still match
+    if path.exists() and path.read_bytes() == data:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(text, encoding="utf-8")
+    path.write_bytes(data)
     return True
 
 
@@ -243,7 +304,7 @@ def main(argv=None, now=None):
         status = json.loads(STATUS.read_text())
     except (OSError, ValueError):
         status = {}
-    scripts = status.get("scripts", {})
+    scripts = dict(status.get("scripts", {}))  # a copy, so the change check below compares old with new
     today = now.date().isoformat()
     names = named or [n for n in SOURCES if n not in DAILY or scripts.get(n, {}).get("last_ok") != today]
     failed = []

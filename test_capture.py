@@ -4,6 +4,8 @@ import json
 import zipfile
 from datetime import datetime, timezone
 
+import pytest
+
 import capture
 
 NEAR = ("51.90", "-2.08")     # Cheltenham
@@ -65,6 +67,8 @@ def test_save_writes_only_when_the_content_changes(tmp_path, monkeypatch):
     assert capture.save("s", "f.csv", "a\n") is True
     assert capture.save("s", "f.csv", "a\n") is False
     assert capture.save("s", "f.csv", "b\n") is True
+    assert capture.save("s", "f.xml", "<rss>\r\n</rss>") is True
+    assert capture.save("s", "f.xml", "<rss>\r\n</rss>") is False
 
 
 def test_a_failure_is_recorded_and_the_others_still_run(tmp_path, monkeypatch):
@@ -96,3 +100,47 @@ def test_daily_sources_run_until_they_succeed_that_day(tmp_path, monkeypatch):
     capture.main([], now=NOW.replace(hour=12))
     capture.main([], now=NOW.replace(day=3))
     assert ran == ["live", "daily", "live", "live", "daily"]
+
+
+def test_feed_times_are_dropped_from_the_channel_only():
+    raw = (b"<rss><channel><lastBuildDate>Mon</lastBuildDate>"
+           b"<item><title>School A</title><pubDate>Sun</pubDate></item></channel></rss>")
+    out = capture.cut_feed_times(raw)
+    assert "lastBuildDate" not in out and "<pubDate>Sun</pubDate>" in out
+
+
+def test_a_page_that_is_not_a_feed_fails():
+    with pytest.raises(RuntimeError, match="not an RSS feed"):
+        capture.cut_feed_times(b"<html>Service unavailable</html>")
+
+
+def test_overflows_need_features():
+    assert json.loads(capture.cut_overflows(b'{"features": [{"properties": {"id": 1}}]}'))["features"]
+    with pytest.raises(RuntimeError):
+        capture.cut_overflows(b'{"error": {"code": 400}}')
+
+
+def test_fire_severity_keeps_each_square_and_day_with_the_issue_time():
+    squares = json.dumps({"features": [
+        {"attributes": {"square_reference_pk": "SP00", "data_date_offset_pk": 1, "rating": 2}},
+        {"attributes": {"square_reference_pk": "SO92", "data_date_offset_pk": 0, "rating": 1}}]})
+    issued = json.dumps({"features": [{"attributes": {"received_date": "2026-11-02"}}]})
+    out = json.loads(capture.cut_fire_severity(squares, issued))
+    assert [s["square_reference_pk"] for s in out["squares"]] == ["SO92", "SP00"]
+    assert out["issued"] == [{"received_date": "2026-11-02"}]
+
+
+def test_an_existing_status_file_records_new_sources_and_failures(tmp_path, monkeypatch):
+    monkeypatch.setattr(capture, "ROOT", tmp_path)
+    monkeypatch.setattr(capture, "STATUS", tmp_path / "status.json")
+    (tmp_path / "status.json").write_text(json.dumps({"runner": "raw", "scripts": {
+        "old": {"last_ok": "2026-11-02", "failing_since": None, "last_error": None}}}))
+
+    def boom():
+        raise RuntimeError("HTTP Error 500")
+
+    monkeypatch.setattr(capture, "SOURCES", {"old": ("f.txt", boom), "new": ("f.txt", lambda: "x\n")})
+    capture.main([], now=NOW)
+    status = json.loads((tmp_path / "status.json").read_text())["scripts"]
+    assert status["new"]["last_ok"] == "2026-11-02"
+    assert status["old"]["failing_since"] == "2026-11-02T11:30Z"
