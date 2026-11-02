@@ -144,3 +144,10 @@ def test_an_existing_status_file_records_new_sources_and_failures(tmp_path, monk
     status = json.loads((tmp_path / "status.json").read_text())["scripts"]
     assert status["new"]["last_ok"] == "2026-11-02"
     assert status["old"]["failing_since"] == "2026-11-02T11:30Z"
+
+
+def test_rail_keeps_the_board_without_its_generated_time():
+    raw = json.dumps({"crs": "CNM", "generatedAt": "2026-11-02T13:00:00", "busServices": [{"std": "13:10"}]})
+    assert json.loads(capture.cut_rail(raw.encode())) == {"crs": "CNM", "busServices": [{"std": "13:10"}]}
+    with pytest.raises(RuntimeError):
+        capture.cut_rail(b'{"message": "Unauthorized"}')

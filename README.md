@@ -19,16 +19,17 @@ Copies of the raw data that [Cheltenham Open Data](https://cheltenham-od.uk) use
 | Power cuts | `sources/nged-power-cuts/power-cuts.csv` | [National Grid Electricity Distribution](https://connecteddata.nationalgrid.co.uk/dataset/live-power-cuts) | NGED Open Data Licence |
 | Flood warnings | `sources/ea-flood-warnings/floods.json` | [Environment Agency](https://environment.data.gov.uk/flood-monitoring/doc/reference) | [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) |
 | Weather warnings | `sources/met-office-warnings/south-west.xml` | [Met Office](https://www.metoffice.gov.uk/weather/warnings-and-advice/uk-warnings) | Met Office RSS terms: free for any purpose, attributed to the Met Office |
+| Trains at Cheltenham Spa | `sources/rail-cheltenham-spa/board.json` | [Rail Delivery Group](https://raildata.org.uk/) (National Rail Enquiries' Live Arrival and Departure Boards), via the Rail Data Marketplace | Rail Data Marketplace open licence: may be made freely available and retained, attributed to Rail Delivery Group |
 | Public toilets | `sources/toilet-map/toilets.json` | [The Great British Toilet Map](https://www.toiletmap.org.uk/dataset) | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | Storm overflows | `sources/severn-trent-storm-overflows/overflows.json` | [Severn Trent Water](https://www.stwater.co.uk/in-my-area/storm-overflow-map/), via the Water UK National Storm Overflow Hub | None stated |
 | Fire severity | `sources/fire-severity-index/fire-severity.json` | Met Office Fire Severity Index, published by [Natural England](https://openaccess.naturalengland.org.uk/) | None stated |
 | School closures | `sources/gcc-school-closures/closures.xml` | [Gloucestershire County Council](https://www.gloucestershire.gov.uk/closures/) | None stated |
 
-Contains public sector information licensed under the Open Government Licence v3.0. Contains data from the Met Office, National Grid Electricity Distribution and The Great British Toilet Map.
+Contains public sector information licensed under the Open Government Licence v3.0. Contains data from Rail Delivery Group, the Met Office, National Grid Electricity Distribution and The Great British Toilet Map.
 
 The last three state no licence. Their publishers make them freely available as public information, and they are kept here as a public record, not for commercial use. A publisher who would like its data removed can open an issue.
 
-The flood warnings, weather warnings and school closures files hold everything in force across their area, as each is a short list. Fire severity is kept per 10 km grid square, without the squares' shapes, which never change. The bus disruptions file keeps rows that name Gloucestershire, Cheltenham or an operator serving the town.
+The trains file is the station's departure and arrival board, which changes on most runs; a board showing only rail replacement buses is how a line closure appears. The flood warnings, weather warnings and school closures files hold everything in force across their area, as each is a short list. Fire severity is kept per 10 km grid square, without the squares' shapes, which never change. The bus disruptions file keeps rows that name Gloucestershire, Cheltenham or an operator serving the town.
 
 ## Running It
 
@@ -38,6 +39,6 @@ python capture.py fuel-finder      # one source
 python -m pytest                   # offline tests
 ```
 
-Fuel prices need `FUEL_PROXY_URL` and `FUEL_PROXY_TOKEN`, as Fuel Finder refuses GitHub's runners. Road closures need `NAT_HIGH_KEY`.
+Fuel prices need `FUEL_PROXY_URL` and `FUEL_PROXY_TOKEN`, as Fuel Finder refuses GitHub's runners. Road closures need `NAT_HIGH_KEY`, and trains need `RDM_LDBWS_KEY`.
 
 The code is under the MIT Licence; each data file stays under its publisher's licence above.

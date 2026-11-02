@@ -34,6 +34,7 @@ jobs:
                   FUEL_PROXY_URL: https://pi-watchdog.cloudflare-10f.workers.dev/raw/fuel.csv
                   FUEL_PROXY_TOKEN: ${{ secrets.FUEL_PROXY_TOKEN }}
                   NAT_HIGH_KEY: ${{ secrets.NAT_HIGH_KEY }}
+                  RDM_LDBWS_KEY: ${{ secrets.RDM_LDBWS_KEY }}
               run: python capture.py
 
             - name: Commit what changed

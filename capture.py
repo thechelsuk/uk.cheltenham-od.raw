@@ -178,6 +178,17 @@ def cut_fire_severity(squares_raw, issued_raw):
     return to_json({"issued": [f["attributes"] for f in issued.get("features", [])], "squares": rows})
 
 
+def cut_rail(raw):
+    """The Cheltenham Spa departure and arrival board, every field kept except
+    generatedAt, which changes on every call. A board showing only rail
+    replacement buses is how the line being closed shows up."""
+    board = json.loads(raw)
+    if board.get("crs") != "CNM":
+        raise RuntimeError(f"not the Cheltenham Spa board: {str(board)[:200]}")
+    board.pop("generatedAt", None)
+    return to_json(board)
+
+
 def cut_toilets(raw):
     """The Great British Toilet Map export: toilets within RADIUS_MILES."""
     data = json.loads(raw)
@@ -243,6 +254,15 @@ def fetch_fire_severity():
     return cut_fire_severity(squares, issued)
 
 
+def fetch_rail():
+    key = os.environ.get("RDM_LDBWS_KEY")
+    if not key:
+        raise RuntimeError("RDM_LDBWS_KEY is required")
+    return cut_rail(get(
+        "https://api1.raildata.org.uk/1010-live-arrival-and-departure-boards-arr-and-dep1_1/LDBWS/api/20220120"
+        "/GetArrDepBoardWithDetails/CNM?numRows=10", {"x-apikey": key}, timeout=30))
+
+
 def fetch_toilets():
     page = get("https://www.toiletmap.org.uk/dataset").decode("utf-8")
     links = re.findall(r'href=["\']([^"\']*?/exports/[^"\']*?\.json[^"\']*)["\']', page)
@@ -267,6 +287,7 @@ SOURCES = {
     "toilet-map": ("toilets.json", fetch_toilets),
     "severn-trent-storm-overflows": ("overflows.json", fetch_overflows),
     "fire-severity-index": ("fire-severity.json", fetch_fire_severity),
+    "rail-cheltenham-spa": ("board.json", fetch_rail),
     "gcc-school-closures": ("closures.xml", lambda: cut_feed_times(get(
         "https://www.gloucestershire.gov.uk/api/pcg-emergency-school-closures/rss-feed/get"))),
 }
