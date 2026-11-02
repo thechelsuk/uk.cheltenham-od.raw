@@ -72,6 +72,7 @@ def test_save_writes_only_when_the_content_changes(tmp_path, monkeypatch):
 
 
 def test_a_failure_is_recorded_and_the_others_still_run(tmp_path, monkeypatch):
+    monkeypatch.setattr(capture, "RETRY_SECONDS", 0)
     monkeypatch.setattr(capture, "ROOT", tmp_path)
     monkeypatch.setattr(capture, "STATUS", tmp_path / "status.json")
 
@@ -131,6 +132,7 @@ def test_fire_severity_keeps_each_square_and_day_with_the_issue_time():
 
 
 def test_an_existing_status_file_records_new_sources_and_failures(tmp_path, monkeypatch):
+    monkeypatch.setattr(capture, "RETRY_SECONDS", 0)
     monkeypatch.setattr(capture, "ROOT", tmp_path)
     monkeypatch.setattr(capture, "STATUS", tmp_path / "status.json")
     (tmp_path / "status.json").write_text(json.dumps({"runner": "raw", "scripts": {
@@ -151,3 +153,20 @@ def test_rail_keeps_the_board_without_its_generated_time():
     assert json.loads(capture.cut_rail(raw.encode())) == {"crs": "CNM", "busServices": [{"std": "13:10"}]}
     with pytest.raises(RuntimeError):
         capture.cut_rail(b'{"message": "Unauthorized"}')
+
+
+def test_a_source_that_fails_once_is_tried_again(tmp_path, monkeypatch):
+    monkeypatch.setattr(capture, "RETRY_SECONDS", 0)
+    monkeypatch.setattr(capture, "ROOT", tmp_path)
+    monkeypatch.setattr(capture, "STATUS", tmp_path / "status.json")
+    calls = []
+
+    def flaky():
+        calls.append(1)
+        if len(calls) == 1:
+            raise RuntimeError("BadZipFile: File is not a zip file")
+        return "ok\n"
+
+    monkeypatch.setattr(capture, "SOURCES", {"flaky": ("f.txt", flaky)})
+    assert capture.main([], now=NOW) == 0
+    assert len(calls) == 2

@@ -53,8 +53,9 @@ jobs:
                   done
                   exit 1
 
-            - name: Fail if a source failed
+            - name: Note a failed source
               if: steps.capture.outcome == 'failure'
-              run: |
-                  echo "::error::A capture failed; see the Capture step and status.json"
-                  exit 1
+              # The run stays green so a passing hiccup doesn't send GitHub's
+              # failure email; status.json records it, and the watchdog emails
+              # once a source has been failing for over an hour.
+              run: echo "::warning::A capture failed; see the Capture step and status.json"

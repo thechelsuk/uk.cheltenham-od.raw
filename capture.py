@@ -22,6 +22,7 @@ import math
 import os
 import re
 import sys
+import time
 import urllib.parse
 import urllib.request
 import zipfile
@@ -35,6 +36,7 @@ CENTRE = (51.8994, -2.0783)  # Cheltenham town centre, on the Promenade
 RADIUS_MILES = 25            # wider than any of the site's own search radii
 USER_AGENT = "CheltenhamOpenData-raw/1.0 (+https://cheltenham-od.uk)"
 MAX_ERROR = 300
+RETRY_SECONDS = 10  # one more try after a failure, for a source's brief hiccups
 
 
 # ---------------------------------------------------------------- helpers
@@ -332,7 +334,12 @@ def main(argv=None, now=None):
     for name in names:
         filename, fetch = SOURCES[name]
         try:
-            changed = save(name, filename, fetch())
+            try:
+                text = fetch()
+            except Exception:  # pylint: disable=broad-except
+                time.sleep(RETRY_SECONDS)
+                text = fetch()
+            changed = save(name, filename, text)
             scripts[name] = update(scripts.get(name, {}), True, now, None)
             print(f"{name}: {'changed' if changed else 'unchanged'}")
         except Exception as exc:  # pylint: disable=broad-except
