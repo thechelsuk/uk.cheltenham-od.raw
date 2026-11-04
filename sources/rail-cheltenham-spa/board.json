@@ -25,7 +25,7 @@
    "isCancelled": false,
    "isCircularRoute": false,
    "isReverseFormation": false,
-   "length": 0,
+   "length": 2,
    "operator": "Transport for Wales",
    "operatorCode": "AW",
    "origin": [
@@ -49,7 +49,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Gloucester",
        "rerouteDelay": 0,
        "st": "05:48"
@@ -60,7 +60,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Lydney",
        "rerouteDelay": 0,
        "st": "06:07"
@@ -71,7 +71,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Chepstow",
        "rerouteDelay": 0,
        "st": "06:16"
@@ -82,7 +82,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Caldicot",
        "rerouteDelay": 0,
        "st": "06:25"
@@ -93,7 +93,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Severn Tunnel Junction",
        "rerouteDelay": 0,
        "st": "06:28"
@@ -104,7 +104,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Newport (South Wales)",
        "rerouteDelay": 0,
        "st": "06:39"
@@ -115,10 +115,138 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 2,
        "locationName": "Cardiff Central",
        "rerouteDelay": 0,
        "st": "06:58"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "PAD",
+     "locationName": "London Paddington"
+    }
+   ],
+   "detachFront": false,
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 9,
+   "operator": "Great Western Railway",
+   "operatorCode": "GW",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "CNM",
+     "locationName": "Cheltenham Spa"
+    }
+   ],
+   "platform": "1",
+   "serviceID": "10389195CHLTNHM_",
+   "serviceType": "train",
+   "std": "05:53",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "06:03"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "SHU",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Stonehouse",
+       "rerouteDelay": 0,
+       "st": "06:21"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "STD",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Stroud",
+       "rerouteDelay": 0,
+       "st": "06:26"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "KEM",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Kemble",
+       "rerouteDelay": 0,
+       "st": "06:41"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "SWI",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Swindon",
+       "rerouteDelay": 0,
+       "st": "06:55"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "DID",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Didcot Parkway",
+       "rerouteDelay": 0,
+       "st": "07:12"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "RDG",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "Reading",
+       "rerouteDelay": 0,
+       "st": "07:26"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "PAD",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 9,
+       "locationName": "London Paddington",
+       "rerouteDelay": 0,
+       "st": "07:57"
       }
      ],
      "serviceChangeRequired": false,
