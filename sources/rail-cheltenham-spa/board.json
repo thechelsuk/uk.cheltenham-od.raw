@@ -692,8 +692,8 @@
    "futureDelay": false,
    "isCancelled": false,
    "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 0,
+   "isReverseFormation": true,
+   "length": 4,
    "operator": "CrossCountry",
    "operatorCode": "XC",
    "origin": [
@@ -710,22 +710,22 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "06:18",
        "crs": "BRI",
        "detachFront": false,
-       "et": "06:17",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Bristol Temple Meads",
        "rerouteDelay": 0,
        "st": "06:15"
       },
       {
        "affectedByDiversion": false,
+       "at": "06:27",
        "crs": "BPW",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Bristol Parkway",
        "rerouteDelay": 0,
        "st": "06:24"
@@ -736,7 +736,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Gloucester",
        "rerouteDelay": 0,
        "st": "06:59"
@@ -760,7 +760,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Birmingham New Street",
        "rerouteDelay": 0,
        "st": "07:55"
@@ -771,7 +771,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Tamworth",
        "rerouteDelay": 0,
        "st": "08:18"
@@ -782,7 +782,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Burton-on-Trent",
        "rerouteDelay": 0,
        "st": "08:28"
@@ -793,7 +793,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Derby",
        "rerouteDelay": 0,
        "st": "08:40"
@@ -804,7 +804,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Sheffield",
        "rerouteDelay": 0,
        "st": "09:20"
@@ -815,7 +815,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Wakefield Westgate",
        "rerouteDelay": 0,
        "st": "09:50"
@@ -826,7 +826,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Leeds",
        "rerouteDelay": 0,
        "st": "10:05"
@@ -837,7 +837,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "York",
        "rerouteDelay": 0,
        "st": "10:32"
@@ -848,7 +848,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Darlington",
        "rerouteDelay": 0,
        "st": "11:06"
@@ -859,7 +859,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Durham",
        "rerouteDelay": 0,
        "st": "11:23"
@@ -870,7 +870,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Newcastle",
        "rerouteDelay": 0,
        "st": "11:37"
@@ -881,7 +881,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Alnmouth",
        "rerouteDelay": 0,
        "st": "12:04"
@@ -892,7 +892,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Berwick-upon-Tweed",
        "rerouteDelay": 0,
        "st": "12:25"
@@ -903,7 +903,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 4,
        "locationName": "Edinburgh",
        "rerouteDelay": 0,
        "st": "13:10"
@@ -1369,9 +1369,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "NWP",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 3,
        "locationName": "Newport (South Wales)",
