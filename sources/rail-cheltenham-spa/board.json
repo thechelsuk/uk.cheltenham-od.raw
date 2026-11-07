@@ -6,5 +6,124 @@
  "crs": "CNM",
  "filterType": "to",
  "locationName": "Cheltenham Spa",
- "platformAvailable": true
+ "platformAvailable": true,
+ "trainServices": [
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "GMV",
+     "locationName": "Great Malvern"
+    }
+   ],
+   "detachFront": false,
+   "eta": "On time",
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 2,
+   "operator": "Great Western Railway",
+   "operatorCode": "GW",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "GCR",
+     "locationName": "Gloucester"
+    }
+   ],
+   "platform": "2",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "05:20"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10493683CHLTNHM_",
+   "serviceType": "train",
+   "sta": "05:28",
+   "std": "05:30",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "ASC",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Ashchurch for Tewkesbury",
+       "rerouteDelay": 0,
+       "st": "05:37"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "WOS",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Worcester Shrub Hill",
+       "rerouteDelay": 0,
+       "st": "05:55"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "WOF",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Worcester Foregate Street",
+       "rerouteDelay": 0,
+       "st": "05:58"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "MVL",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Malvern Link",
+       "rerouteDelay": 0,
+       "st": "06:08"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "GMV",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 2,
+       "locationName": "Great Malvern",
+       "rerouteDelay": 0,
+       "st": "06:11"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  }
+ ]
 }
