@@ -42,11 +42,26 @@
            },
            "carriagewayExtensionG": {
             "impactOnCarriageway": {
-             "numberOfLanesRestricted": 0,
-             "numberOfOperationalLanes": 4
+             "numberOfLanesRestricted": 1,
+             "numberOfOperationalLanes": 3
             }
            },
            "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Closed"
+               }
+              }
+             },
+             "laneNumber": 1,
+             "laneUsage": {
+              "extendedValueG": "cl1",
+              "value": "extendedG"
+             }
+            },
             {
              "laneExtensionG": {
               "impactOnLanes": {
@@ -59,6 +74,36 @@
              "laneNumber": 2,
              "laneUsage": {
               "extendedValueG": "cl2",
+              "value": "extendedG"
+             }
+            },
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 3,
+             "laneUsage": {
+              "extendedValueG": "cl3",
+              "value": "extendedG"
+             }
+            },
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 4,
+             "laneUsage": {
+              "extendedValueG": "cl4",
               "value": "extendedG"
              }
             }
