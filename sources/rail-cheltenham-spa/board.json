@@ -124,6 +124,124 @@
      "serviceType": "train"
     }
    ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "CDF",
+     "locationName": "Cardiff Central",
+     "via": "via Gloucester"
+    }
+   ],
+   "detachFront": false,
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 0,
+   "operator": "Transport for Wales",
+   "operatorCode": "AW",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "CNM",
+     "locationName": "Cheltenham Spa"
+    }
+   ],
+   "platform": "1",
+   "serviceID": "10475484CHLTNHM_",
+   "serviceType": "train",
+   "std": "05:40",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "05:49"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "LYD",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Lydney",
+       "rerouteDelay": 0,
+       "st": "06:09"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CPW",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Chepstow",
+       "rerouteDelay": 0,
+       "st": "06:19"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CDT",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Caldicot",
+       "rerouteDelay": 0,
+       "st": "06:28"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "STJ",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Severn Tunnel Junction",
+       "rerouteDelay": 0,
+       "st": "06:31"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "NWP",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Newport (South Wales)",
+       "rerouteDelay": 0,
+       "st": "06:44"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CDF",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Cardiff Central",
+       "rerouteDelay": 0,
+       "st": "07:02"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
   }
  ]
 }
