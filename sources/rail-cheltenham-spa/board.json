@@ -9,316 +9,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "delayReason": "This service has been delayed by a speed restriction over defective track",
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "BRI",
-     "locationName": "Bristol Temple Meads"
-    }
-   ],
-   "detachFront": false,
-   "eta": "19:03",
-   "etd": "19:04",
-   "filterLocationCancelled": false,
-   "futureCancellation": true,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": true,
-   "length": 9,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "EDB",
-     "locationName": "Edinburgh"
-    }
-   ],
-   "platform": "1",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "EDB",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Edinburgh",
-       "rerouteDelay": 0,
-       "st": "13:05"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BWK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Berwick-upon-Tweed",
-       "rerouteDelay": 0,
-       "st": "13:47"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "14:15",
-       "crs": "ALM",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Alnmouth",
-       "rerouteDelay": 0,
-       "st": "14:08"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "14:42",
-       "crs": "NCL",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Newcastle",
-       "rerouteDelay": 0,
-       "st": "14:39"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DHM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Durham",
-       "rerouteDelay": 0,
-       "st": "14:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DAR",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Darlington",
-       "rerouteDelay": 0,
-       "st": "15:11"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "YRK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "York",
-       "rerouteDelay": 0,
-       "st": "15:42"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "LDS",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Leeds",
-       "rerouteDelay": 0,
-       "st": "16:11"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "16:30",
-       "crs": "WKF",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Wakefield Westgate",
-       "rerouteDelay": 0,
-       "st": "16:23"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:00",
-       "crs": "SHF",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Sheffield",
-       "rerouteDelay": 0,
-       "st": "16:55"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:40",
-       "crs": "DBY",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Derby",
-       "rerouteDelay": 0,
-       "st": "17:34"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:50",
-       "crs": "BUT",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Burton-on-Trent",
-       "rerouteDelay": 0,
-       "st": "17:44"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:01",
-       "crs": "TAM",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Tamworth",
-       "rerouteDelay": 0,
-       "st": "17:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:20",
-       "crs": "BHM",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": 0,
-       "st": "18:12"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10501555CHLTNHM_",
-   "serviceType": "train",
-   "sta": "18:50",
-   "std": "18:52",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "BPW",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "et": "19:31",
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": 0,
-       "st": "19:21"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "BRI",
-       "delayReason": "This service has been delayed by a speed restriction over defective track",
-       "detachFront": false,
-       "et": "19:40",
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": 0,
-       "st": "19:35"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "TAU",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Taunton",
-       "rerouteDelay": 0,
-       "st": "20:15"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "TVP",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Tiverton Parkway",
-       "rerouteDelay": 0,
-       "st": "20:28"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "EXD",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Exeter St Davids",
-       "rerouteDelay": 0,
-       "st": "20:44"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "NTA",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Newton Abbot",
-       "rerouteDelay": 0,
-       "st": "21:07"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "TOT",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Totnes",
-       "rerouteDelay": 0,
-       "st": "21:20"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "PLY",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 9,
-       "locationName": "Plymouth",
-       "rerouteDelay": 0,
-       "st": "21:47"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
    "delayReason": "This service has been delayed by train crew being delayed by service disruption",
    "destination": [
     {
@@ -328,8 +18,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "19:28",
-   "etd": "19:29",
+   "eta": "19:30",
+   "etd": "19:31",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -462,7 +152,7 @@
        "crs": "BHM",
        "delayReason": "This service has been delayed by train crew being delayed by service disruption",
        "detachFront": false,
-       "et": "20:05",
+       "et": "20:07",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
@@ -474,7 +164,7 @@
        "crs": "TAM",
        "delayReason": "This service has been delayed by train crew being delayed by service disruption",
        "detachFront": false,
-       "et": "20:20",
+       "et": "20:22",
        "isCancelled": false,
        "length": 0,
        "locationName": "Tamworth",
@@ -484,8 +174,9 @@
       {
        "affectedByDiversion": false,
        "crs": "DBY",
+       "delayReason": "This service has been delayed by train crew being delayed by service disruption",
        "detachFront": false,
-       "et": "On time",
+       "et": "20:40",
        "isCancelled": false,
        "length": 0,
        "locationName": "Derby",
@@ -532,6 +223,7 @@
    ]
   },
   {
+   "delayReason": "This service has been delayed by earlier engineering works not being finished on time",
    "destination": [
     {
      "assocIsCancelled": false,
@@ -540,7 +232,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "On time",
+   "eta": "19:35",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -624,10 +316,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "19:09",
        "crs": "STD",
        "delayReason": "This service has been delayed by earlier engineering works not being finished on time",
        "detachFront": false,
-       "et": "19:05",
        "isCancelled": false,
        "length": 9,
        "locationName": "Stroud",
@@ -636,10 +328,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "19:15",
        "crs": "SHU",
        "delayReason": "This service has been delayed by earlier engineering works not being finished on time",
        "detachFront": false,
-       "et": "19:10",
        "isCancelled": false,
        "length": 9,
        "locationName": "Stonehouse",
@@ -651,7 +343,7 @@
        "crs": "GCR",
        "delayReason": "This service has been delayed by earlier engineering works not being finished on time",
        "detachFront": false,
-       "et": "19:22",
+       "et": "19:27",
        "isCancelled": false,
        "length": 9,
        "locationName": "Gloucester",
@@ -744,9 +436,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "CPW",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 2,
        "locationName": "Chepstow",
@@ -755,9 +447,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "LYD",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 2,
        "locationName": "Lydney",
@@ -794,8 +486,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "20:02",
-   "etd": "20:03",
+   "eta": "20:04",
+   "etd": "20:05",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -1040,10 +732,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "19:11",
        "crs": "TAM",
        "delayReason": "This service has been delayed by a speed restriction over defective track",
        "detachFront": false,
-       "et": "19:08",
        "isCancelled": false,
        "length": 9,
        "locationName": "Tamworth",
@@ -1055,7 +747,7 @@
        "crs": "BHM",
        "delayReason": "This service has been delayed by a speed restriction over defective track",
        "detachFront": false,
-       "et": "19:24",
+       "et": "19:26",
        "isCancelled": false,
        "length": 9,
        "locationName": "Birmingham New Street",
@@ -1080,7 +772,7 @@
        "crs": "BPW",
        "delayReason": "This service has been delayed by a speed restriction over defective track",
        "detachFront": false,
-       "et": "20:30",
+       "et": "20:32",
        "isCancelled": false,
        "length": 9,
        "locationName": "Bristol Parkway",
@@ -1092,7 +784,7 @@
        "crs": "BRI",
        "delayReason": "This service has been delayed by a speed restriction over defective track",
        "detachFront": false,
-       "et": "20:39",
+       "et": "20:41",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Temple Meads",
@@ -1774,9 +1466,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "TAM",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Tamworth",
@@ -2019,6 +1711,101 @@
      "serviceType": "train"
     }
    ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "CNM",
+     "locationName": "Cheltenham Spa"
+    }
+   ],
+   "detachFront": false,
+   "eta": "Delayed",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 5,
+   "operator": "Great Western Railway",
+   "operatorCode": "GW",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "SWI",
+     "locationName": "Swindon"
+    }
+   ],
+   "platform": "2",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "SWI",
+       "detachFront": false,
+       "et": "Delayed",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Swindon",
+       "rerouteDelay": 0,
+       "st": "19:25"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "KEM",
+       "detachFront": false,
+       "et": "Delayed",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Kemble",
+       "rerouteDelay": 0,
+       "st": "19:36"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "STD",
+       "detachFront": false,
+       "et": "Delayed",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Stroud",
+       "rerouteDelay": 0,
+       "st": "19:55"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "SHU",
+       "detachFront": false,
+       "et": "Delayed",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Stonehouse",
+       "rerouteDelay": 0,
+       "st": "20:00"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "Delayed",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "20:20"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10499812CHLTNHM_",
+   "serviceType": "train",
+   "sta": "20:29"
   }
  ]
 }
