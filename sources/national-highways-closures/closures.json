@@ -1,3 +1,250 @@
 {
- "situation": []
+ "situation": [
+  {
+   "headerInformation": {
+    "confidentiality": "noRestriction",
+    "informationStatus": "real"
+   },
+   "idG": "signs/M5-S7408B",
+   "situationRecord": [
+    {
+     "sitRoadOrCarriagewayOrLaneManagement": {
+      "cause": {
+       "causeType": "roadOrCarriagewayOrLaneManagement",
+       "detailedCauseType": {
+        "roadOrCarriagewayOrLaneManagementType": {
+         "value": "laneClosures"
+        }
+       }
+      },
+      "complianceOption": "mandatory",
+      "generalPublicComment": [
+       {
+        "comment": "laneClosures"
+       }
+      ],
+      "idG": "7-1794212287-2a41ada7-6e4f-4a7f-9b6b-62c778642773-close",
+      "locationReference": {
+       "locLinearLocation": {
+        "gmlLineString": {
+         "locGmlLineString": {
+          "posList": "52.236964 -2.136664 52.238104 -2.135995 52.238589 -2.135691 52.239128 -2.135444 52.23983 -2.135138 52.24054 -2.134848 52.2409 -2.134717 52.241494 -2.134514 52.242357 -2.134253 52.243095 -2.134064 52.243404 -2.133988",
+          "srsDimension": 2,
+          "srsName": "ESPG::4326"
+         }
+        },
+        "supplementaryPositionalDescription": {
+         "carriageway": [
+          {
+           "carriageway": {
+            "extendedValueG": "dualCarriageway",
+            "value": "extendedG"
+           },
+           "carriagewayExtensionG": {
+            "impactOnCarriageway": {
+             "numberOfLanesRestricted": 0,
+             "numberOfOperationalLanes": 4
+            }
+           },
+           "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 2,
+             "laneUsage": {
+              "extendedValueG": "cl2",
+              "value": "extendedG"
+             }
+            }
+           ]
+          }
+         ],
+         "locationDescription": "M5 northbound between J6 and J5"
+        }
+       },
+       "locSingleRoadLinearLocation": {
+        "linearWithinLinearElement": [
+         {
+          "directionOnLinearSection": "northBound",
+          "directionRelativeOnLinearSection": "aligned",
+          "fromPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 866.0
+           }
+          },
+          "heightGradeOfLinearSection": {
+           "extendedValueG": "start2End2",
+           "value": "extendedG"
+          },
+          "linearElement": {
+           "locLinearElementByCode": {
+            "linearElementByCodeExtensionG": {
+             "linearElementType": "bCarriageway"
+            },
+            "linearElementIdentifier": "{37366336-4236-4C74-A267-A3DECDF3FDF3}",
+            "linearElementReferenceModel": "The Network Model",
+            "roadName": "M5"
+           }
+          },
+          "toPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 117.0
+           }
+          }
+         }
+        ]
+       }
+      },
+      "probabilityOfOccurrence": "certain",
+      "roadOrCarriagewayOrLaneManagementType": {
+       "value": "laneClosures"
+      },
+      "situationRecordCreationTime": "2026-11-09T08:13:50.50Z",
+      "situationRecordVersionTime": "2026-11-09T08:27:17.17Z",
+      "source": {
+       "sourceIdentification": "Signs and Signals"
+      },
+      "validity": {
+       "validityStatus": "active",
+       "validityTimeSpecification": {
+        "overallEndTime": "2026-11-09T08:28:50.50Z",
+        "overallStartTime": "2026-11-09T08:13:50.50Z"
+       }
+      },
+      "versionG": "1"
+     }
+    }
+   ],
+   "situationVersionTime": "2026-11-09T08:27:17.17Z"
+  },
+  {
+   "headerInformation": {
+    "confidentiality": "noRestriction",
+    "informationStatus": "real"
+   },
+   "idG": "signs/M5-S7415B",
+   "situationRecord": [
+    {
+     "sitRoadOrCarriagewayOrLaneManagement": {
+      "cause": {
+       "causeType": "roadOrCarriagewayOrLaneManagement",
+       "detailedCauseType": {
+        "roadOrCarriagewayOrLaneManagementType": {
+         "value": "laneClosures"
+        }
+       }
+      },
+      "complianceOption": "mandatory",
+      "generalPublicComment": [
+       {
+        "comment": "laneClosures"
+       }
+      ],
+      "idG": "7-1794212287-20b8ad02-0552-43eb-a066-e2a11eece9e5-close",
+      "locationReference": {
+       "locLinearLocation": {
+        "gmlLineString": {
+         "locGmlLineString": {
+          "posList": "52.231221 -2.140181 52.236155 -2.137139 52.236962 -2.136665",
+          "srsDimension": 2,
+          "srsName": "ESPG::4326"
+         }
+        },
+        "supplementaryPositionalDescription": {
+         "carriageway": [
+          {
+           "carriageway": {
+            "extendedValueG": "dualCarriageway",
+            "value": "extendedG"
+           },
+           "carriagewayExtensionG": {
+            "impactOnCarriageway": {
+             "numberOfLanesRestricted": 0,
+             "numberOfOperationalLanes": 4
+            }
+           },
+           "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 2,
+             "laneUsage": {
+              "extendedValueG": "cl2",
+              "value": "extendedG"
+             }
+            }
+           ]
+          }
+         ],
+         "locationDescription": "M5 northbound between J6 and J5"
+        }
+       },
+       "locSingleRoadLinearLocation": {
+        "linearWithinLinearElement": [
+         {
+          "directionOnLinearSection": "northBound",
+          "directionRelativeOnLinearSection": "aligned",
+          "fromPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 183.0
+           }
+          },
+          "heightGradeOfLinearSection": {
+           "extendedValueG": "start2End2",
+           "value": "extendedG"
+          },
+          "linearElement": {
+           "locLinearElementByCode": {
+            "linearElementByCodeExtensionG": {
+             "linearElementType": "bCarriageway"
+            },
+            "linearElementIdentifier": "{37366336-4236-4C74-A267-A3DECDF3FDF3}",
+            "linearElementReferenceModel": "The Network Model",
+            "roadName": "M5"
+           }
+          },
+          "toPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 858.0
+           }
+          }
+         }
+        ]
+       }
+      },
+      "probabilityOfOccurrence": "certain",
+      "roadOrCarriagewayOrLaneManagementType": {
+       "value": "laneClosures"
+      },
+      "situationRecordCreationTime": "2026-11-09T08:13:50.50Z",
+      "situationRecordVersionTime": "2026-11-09T08:27:17.17Z",
+      "source": {
+       "sourceIdentification": "Signs and Signals"
+      },
+      "validity": {
+       "validityStatus": "active",
+       "validityTimeSpecification": {
+        "overallEndTime": "2026-11-09T08:28:50.50Z",
+        "overallStartTime": "2026-11-09T08:13:50.50Z"
+       }
+      },
+      "versionG": "1"
+     }
+    }
+   ],
+   "situationVersionTime": "2026-11-09T08:27:17.17Z"
+  }
+ ]
 }
