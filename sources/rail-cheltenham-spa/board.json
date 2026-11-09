@@ -14,178 +14,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "GCR",
-     "locationName": "Gloucester"
-    }
-   ],
-   "detachFront": false,
-   "eta": "On time",
-   "etd": "On time",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 0,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "LEI",
-     "locationName": "Leicester"
-    }
-   ],
-   "platform": "1",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "LEI",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Leicester",
-       "rerouteDelay": 0,
-       "st": "20:20"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "SWS",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "South Wigston",
-       "rerouteDelay": 0,
-       "st": "20:26"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NBR",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Narborough",
-       "rerouteDelay": 0,
-       "st": "20:31"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "HNK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Hinckley",
-       "rerouteDelay": 0,
-       "st": "20:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NUN",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Nuneaton",
-       "rerouteDelay": 0,
-       "st": "20:47"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "CEH",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Coleshill Parkway",
-       "rerouteDelay": 0,
-       "st": "21:02"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BHM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": 0,
-       "st": "21:30"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "UNI",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "University",
-       "rerouteDelay": 0,
-       "st": "21:37"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:00",
-       "crs": "WOP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Worcestershire Parkway",
-       "rerouteDelay": 0,
-       "st": "21:58"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:11",
-       "crs": "ASC",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Ashchurch for Tewkesbury",
-       "rerouteDelay": 0,
-       "st": "22:09"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10525503CHLTNHM_",
-   "serviceType": "train",
-   "sta": "22:20",
-   "std": "22:21",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "GCR",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "22:31"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
    "delayReason": "This service has been delayed by a speed restriction over defective track",
    "destination": [
     {
@@ -195,7 +23,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "22:30",
+   "eta": "22:33",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -287,10 +115,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "22:22",
        "crs": "GCR",
        "delayReason": "This service has been delayed by a speed restriction over defective track",
        "detachFront": false,
-       "et": "22:21",
        "isCancelled": false,
        "length": 2,
        "locationName": "Gloucester",
@@ -416,9 +244,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "GCR",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
@@ -444,8 +272,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:06",
-   "etd": "23:07",
+   "eta": "23:09",
+   "etd": "23:10",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -649,7 +477,7 @@
        "crs": "BHM",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "22:30",
+       "et": "22:33",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
@@ -674,7 +502,7 @@
        "crs": "BPW",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:34",
+       "et": "23:37",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Parkway",
@@ -686,7 +514,7 @@
        "crs": "BRI",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:43",
+       "et": "23:46",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Temple Meads",
@@ -909,9 +737,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "BPW",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Parkway",
@@ -1144,9 +972,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "CPW",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Chepstow",
@@ -1155,9 +983,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "LYD",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Lydney",
@@ -1334,7 +1162,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:43",
+   "eta": "23:46",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -1369,10 +1197,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "22:22",
        "crs": "RDG",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "22:22",
        "isCancelled": false,
        "length": 5,
        "locationName": "Reading",
@@ -1384,7 +1212,7 @@
        "crs": "DID",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "22:34",
+       "et": "22:37",
        "isCancelled": false,
        "length": 5,
        "locationName": "Didcot Parkway",
@@ -1396,7 +1224,7 @@
        "crs": "SWI",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "22:50",
+       "et": "22:53",
        "isCancelled": false,
        "length": 5,
        "locationName": "Swindon",
@@ -1408,7 +1236,7 @@
        "crs": "KEM",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:02",
+       "et": "23:05",
        "isCancelled": false,
        "length": 5,
        "locationName": "Kemble",
@@ -1420,7 +1248,7 @@
        "crs": "STD",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:17",
+       "et": "23:20",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stroud",
@@ -1432,7 +1260,7 @@
        "crs": "SHU",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:21",
+       "et": "23:25",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stonehouse",
@@ -1444,7 +1272,7 @@
        "crs": "GCR",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:33",
+       "et": "23:37",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
