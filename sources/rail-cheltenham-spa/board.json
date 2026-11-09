@@ -14,271 +14,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "delayReason": "This service has been delayed by trespassers on the railway",
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "BRI",
-     "locationName": "Bristol Temple Meads"
-    }
-   ],
-   "detachFront": false,
-   "eta": "23:15",
-   "etd": "23:17",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 0,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "EDB",
-     "locationName": "Edinburgh"
-    }
-   ],
-   "platform": "1",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "EDB",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Edinburgh",
-       "rerouteDelay": 0,
-       "st": "17:04"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DUN",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Dunbar",
-       "rerouteDelay": 0,
-       "st": "17:26"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BWK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Berwick-upon-Tweed",
-       "rerouteDelay": 0,
-       "st": "17:50"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:13",
-       "crs": "ALM",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Alnmouth",
-       "rerouteDelay": 0,
-       "st": "18:10"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:15",
-       "crs": "NCL",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Newcastle",
-       "rerouteDelay": 0,
-       "st": "18:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:34",
-       "crs": "DHM",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Durham",
-       "rerouteDelay": 0,
-       "st": "18:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:51",
-       "crs": "DAR",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Darlington",
-       "rerouteDelay": 0,
-       "st": "19:11"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "20:21",
-       "crs": "YRK",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "York",
-       "rerouteDelay": 0,
-       "st": "19:42"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "Cancelled",
-       "cancelReason": "This service has been cancelled because of trespassers on the railway",
-       "crs": "LDS",
-       "detachFront": false,
-       "isCancelled": true,
-       "length": 0,
-       "locationName": "Leeds",
-       "rerouteDelay": 0,
-       "st": "20:15"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "Cancelled",
-       "cancelReason": "This service has been cancelled because of trespassers on the railway",
-       "crs": "WKF",
-       "detachFront": false,
-       "isCancelled": true,
-       "length": 0,
-       "locationName": "Wakefield Westgate",
-       "rerouteDelay": 0,
-       "st": "20:27"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "21:14",
-       "crs": "SHF",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Sheffield",
-       "rerouteDelay": -28,
-       "st": "20:55"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "21:28",
-       "crs": "CHD",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Chesterfield",
-       "rerouteDelay": -28,
-       "st": "21:07"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "21:50",
-       "crs": "DBY",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Derby",
-       "rerouteDelay": -28,
-       "st": "21:31"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "22:02",
-       "crs": "BUT",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Burton-on-Trent",
-       "rerouteDelay": -28,
-       "st": "21:41"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "22:14",
-       "crs": "TAM",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tamworth",
-       "rerouteDelay": -28,
-       "st": "21:52"
-      },
-      {
-       "affectedByDiversion": true,
-       "at": "22:36",
-       "crs": "BHM",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": -28,
-       "st": "22:12"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10525519CHLTNHM_",
-   "serviceType": "train",
-   "sta": "22:50",
-   "std": "22:52",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": true,
-       "crs": "BPW",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "et": "23:44",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": -28,
-       "st": "23:20"
-      },
-      {
-       "affectedByDiversion": true,
-       "crs": "BRI",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "et": "23:53",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": -28,
-       "st": "23:34"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
    "delayReason": "This service has been delayed by congestion",
    "destination": [
     {
@@ -289,8 +24,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:41",
-   "etd": "23:42",
+   "eta": "23:57",
+   "etd": "23:58",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -317,7 +52,7 @@
        "crs": "WOS",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "23:18",
+       "et": "23:34",
        "isCancelled": false,
        "length": 5,
        "locationName": "Worcester Shrub Hill",
@@ -329,7 +64,7 @@
        "crs": "ASC",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "23:34",
+       "et": "23:50",
        "isCancelled": false,
        "length": 5,
        "locationName": "Ashchurch for Tewkesbury",
@@ -354,7 +89,7 @@
        "crs": "GCR",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "23:50",
+       "et": "00:06",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
@@ -366,7 +101,7 @@
        "crs": "BPW",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "00:17",
+       "et": "00:33",
        "isCancelled": false,
        "length": 5,
        "locationName": "Bristol Parkway",
@@ -378,7 +113,7 @@
        "crs": "FIT",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "00:20",
+       "et": "00:36",
        "isCancelled": false,
        "length": 5,
        "locationName": "Filton Abbey Wood",
@@ -390,7 +125,7 @@
        "crs": "BRI",
        "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "00:28",
+       "et": "00:44",
        "isCancelled": false,
        "length": 5,
        "locationName": "Bristol Temple Meads",
@@ -413,7 +148,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:45",
+   "eta": "23:48",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -496,10 +231,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "23:20",
        "crs": "STD",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:19",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stroud",
@@ -508,10 +243,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "23:25",
        "crs": "SHU",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:24",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stonehouse",
@@ -523,7 +258,7 @@
        "crs": "GCR",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:36",
+       "et": "23:39",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
