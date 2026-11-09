@@ -6,28 +6,22 @@
  "crs": "CNM",
  "filterType": "to",
  "locationName": "Cheltenham Spa",
- "nrccMessages": [
-  {
-   "Value": "<p>Trains between Reading and Maidenhead may be cancelled, delayed by up to 30 minutes or revised. More details can be found in the Disruptions area of the <a href=\"https://www.nationalrail.co.uk/service-disruptions/maidenhead-20261109/\">National Rail website</a>.</p>"
-  }
- ],
  "platformAvailable": true,
  "trainServices": [
   {
-   "delayReason": "This service has been delayed by congestion",
+   "delayReason": "This service has been delayed by a points failure",
    "destination": [
     {
      "assocIsCancelled": false,
-     "crs": "BRI",
-     "locationName": "Bristol Temple Meads",
-     "via": "via Gloucester"
+     "crs": "BPW",
+     "locationName": "Bristol Parkway"
     }
    ],
    "detachFront": false,
-   "eta": "23:57",
-   "etd": "23:58",
+   "eta": "00:05",
+   "etd": "00:06",
    "filterLocationCancelled": false,
-   "futureCancellation": false,
+   "futureCancellation": true,
    "futureDelay": false,
    "isCancelled": false,
    "isCircularRoute": false,
@@ -49,10 +43,10 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "23:43",
        "crs": "WOS",
-       "delayReason": "This service has been delayed by congestion",
+       "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "23:34",
        "isCancelled": false,
        "length": 5,
        "locationName": "Worcester Shrub Hill",
@@ -62,9 +56,9 @@
       {
        "affectedByDiversion": false,
        "crs": "ASC",
-       "delayReason": "This service has been delayed by congestion",
+       "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "23:50",
+       "et": "23:58",
        "isCancelled": false,
        "length": 5,
        "locationName": "Ashchurch for Tewkesbury",
@@ -87,9 +81,9 @@
       {
        "affectedByDiversion": false,
        "crs": "GCR",
-       "delayReason": "This service has been delayed by congestion",
+       "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "00:06",
+       "et": "00:15",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
@@ -99,9 +93,9 @@
       {
        "affectedByDiversion": false,
        "crs": "BPW",
-       "delayReason": "This service has been delayed by congestion",
+       "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "00:33",
+       "et": "00:42",
        "isCancelled": false,
        "length": 5,
        "locationName": "Bristol Parkway",
@@ -110,11 +104,11 @@
       },
       {
        "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a points failure",
        "crs": "FIT",
-       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "00:36",
-       "isCancelled": false,
+       "et": "Cancelled",
+       "isCancelled": true,
        "length": 5,
        "locationName": "Filton Abbey Wood",
        "rerouteDelay": 0,
@@ -122,11 +116,11 @@
       },
       {
        "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a points failure",
        "crs": "BRI",
-       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "00:44",
-       "isCancelled": false,
+       "et": "Cancelled",
+       "isCancelled": true,
        "length": 5,
        "locationName": "Bristol Temple Meads",
        "rerouteDelay": 0,
@@ -148,7 +142,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:48",
+   "eta": "23:50",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -255,10 +249,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "23:42",
        "crs": "GCR",
        "delayReason": "This service has been delayed by trespassers on the railway",
        "detachFront": false,
-       "et": "23:39",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
@@ -307,9 +301,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "SWI",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 3,
        "locationName": "Swindon",
