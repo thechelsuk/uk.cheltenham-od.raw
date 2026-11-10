@@ -18,8 +18,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "00:05",
-   "etd": "00:06",
+   "eta": "00:06",
+   "etd": "00:07",
    "filterLocationCancelled": false,
    "futureCancellation": true,
    "futureDelay": false,
@@ -55,10 +55,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "23:59",
        "crs": "ASC",
        "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "23:58",
        "isCancelled": false,
        "length": 5,
        "locationName": "Ashchurch for Tewkesbury",
@@ -83,7 +83,7 @@
        "crs": "GCR",
        "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "00:15",
+       "et": "00:16",
        "isCancelled": false,
        "length": 5,
        "locationName": "Gloucester",
@@ -95,7 +95,7 @@
        "crs": "BPW",
        "delayReason": "This service has been delayed by a points failure",
        "detachFront": false,
-       "et": "00:42",
+       "et": "00:43",
        "isCancelled": false,
        "length": 5,
        "locationName": "Bristol Parkway",
@@ -131,142 +131,6 @@
      "serviceType": "train"
     }
    ]
-  },
-  {
-   "delayReason": "This service has been delayed by trespassers on the railway",
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CNM",
-     "locationName": "Cheltenham Spa"
-    }
-   ],
-   "detachFront": false,
-   "eta": "23:50",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 5,
-   "operator": "Great Western Railway",
-   "operatorCode": "GW",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "PAD",
-     "locationName": "London Paddington"
-    }
-   ],
-   "platform": "2",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "PAD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "London Paddington",
-       "rerouteDelay": 0,
-       "st": "21:31"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:22",
-       "crs": "RDG",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Reading",
-       "rerouteDelay": 0,
-       "st": "21:56"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:37",
-       "crs": "DID",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Didcot Parkway",
-       "rerouteDelay": 0,
-       "st": "22:09"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:53",
-       "crs": "SWI",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Swindon",
-       "rerouteDelay": 0,
-       "st": "22:27"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "23:06",
-       "crs": "KEM",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Kemble",
-       "rerouteDelay": 0,
-       "st": "22:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "23:20",
-       "crs": "STD",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Stroud",
-       "rerouteDelay": 0,
-       "st": "22:56"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "23:25",
-       "crs": "SHU",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Stonehouse",
-       "rerouteDelay": 0,
-       "st": "23:01"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "23:42",
-       "crs": "GCR",
-       "delayReason": "This service has been delayed by trespassers on the railway",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "23:21"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10544197CHLTNHM_",
-   "serviceType": "train",
-   "sta": "23:31"
   },
   {
    "destination": [
@@ -312,9 +176,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "KEM",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 3,
        "locationName": "Kemble",
