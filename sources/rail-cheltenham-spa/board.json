@@ -9,6 +9,14 @@
  "platformAvailable": true,
  "trainServices": [
   {
+   "cancelReason": "This service has been cancelled because of train crew being delayed",
+   "currentOrigins": [
+    {
+     "assocIsCancelled": false,
+     "crs": "GCR",
+     "locationName": "Gloucester"
+    }
+   ],
    "destination": [
     {
      "assocIsCancelled": false,
@@ -17,11 +25,11 @@
     }
    ],
    "detachFront": false,
-   "etd": "On time",
+   "etd": "Cancelled",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
-   "isCancelled": false,
+   "isCancelled": true,
    "isCircularRoute": false,
    "isReverseFormation": false,
    "length": 9,
@@ -51,7 +59,7 @@
        "length": 9,
        "locationName": "Gloucester",
        "rerouteDelay": 0,
-       "st": "06:03"
+       "st": "06:10"
       },
       {
        "affectedByDiversion": false,
@@ -513,9 +521,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "BHM",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
