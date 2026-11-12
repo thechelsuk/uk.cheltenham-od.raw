@@ -3,28 +3,17 @@
   "Count": 8
  },
  "areServicesAvailable": true,
- "crs": "CNM",
- "filterType": "to",
- "locationName": "Cheltenham Spa",
- "nrccMessages": [
-  {
-   "Value": "Trains running&nbsp;in the Wakefield Kirkgate area may be cancelled, delayed by&nbsp;up to 20 minutes&nbsp;or diverted. Latest information can be found in the Disruptions area of the <a href=\"https://www.nationalrail.co.uk/service-disruptions/barnsley-20261112/\">National Rail website</a>."
-  }
- ],
- "platformAvailable": true,
- "trainServices": [
+ "busServices": [
   {
    "destination": [
     {
      "assocIsCancelled": false,
-     "crs": "CDF",
-     "locationName": "Cardiff Central",
-     "via": "via Gloucester"
+     "crs": "NWP",
+     "locationName": "Newport (South Wales)"
     }
    ],
    "detachFront": false,
-   "eta": "20:21",
-   "etd": "20:22",
+   "etd": "On time",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -37,124 +26,14 @@
    "origin": [
     {
      "assocIsCancelled": false,
-     "crs": "NOT",
-     "locationName": "Nottingham"
+     "crs": "CNM",
+     "locationName": "Cheltenham Spa"
     }
    ],
-   "platform": "1",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NOT",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Nottingham",
-       "rerouteDelay": 0,
-       "st": "18:05"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:15",
-       "crs": "BEE",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Beeston",
-       "rerouteDelay": 0,
-       "st": "18:11"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:25",
-       "crs": "LGE",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Long Eaton",
-       "rerouteDelay": 0,
-       "st": "18:20"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DBY",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Derby",
-       "rerouteDelay": 0,
-       "st": "18:39"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BUT",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Burton-on-Trent",
-       "rerouteDelay": 0,
-       "st": "18:50"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "TAM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tamworth",
-       "rerouteDelay": 0,
-       "st": "19:02"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:37",
-       "crs": "BHM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": 0,
-       "st": "19:30"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:43",
-       "crs": "UNI",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "University",
-       "rerouteDelay": 0,
-       "st": "19:37"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "20:07",
-       "crs": "WOP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Worcestershire Parkway",
-       "rerouteDelay": 0,
-       "st": "19:58"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "rsid": "XC578000",
-   "serviceID": "10627769CHLTNHM_",
-   "serviceType": "train",
-   "sta": "20:14",
-   "std": "20:15",
+   "platform": "BUS",
+   "serviceID": "10652991CHLTNHM_",
+   "serviceType": "bus",
+   "std": "21:15",
    "subsequentCallingPoints": [
     {
      "assocIsCancelled": false,
@@ -163,41 +42,85 @@
        "affectedByDiversion": false,
        "crs": "GCR",
        "detachFront": false,
-       "et": "20:30",
+       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Gloucester",
        "rerouteDelay": 0,
-       "st": "20:23"
+       "st": "21:35"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "LYD",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Lydney",
+       "rerouteDelay": 0,
+       "st": "22:15"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CPW",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Chepstow",
+       "rerouteDelay": 0,
+       "st": "22:30"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CDT",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Caldicot",
+       "rerouteDelay": 0,
+       "st": "22:50"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "STJ",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Severn Tunnel Junction",
+       "rerouteDelay": 0,
+       "st": "23:00"
       },
       {
        "affectedByDiversion": false,
        "crs": "NWP",
        "detachFront": false,
-       "et": "21:11",
+       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Newport (South Wales)",
        "rerouteDelay": 0,
-       "st": "21:08"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "CDF",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Cardiff Central",
-       "rerouteDelay": 0,
-       "st": "21:26"
+       "st": "23:30"
       }
      ],
      "serviceChangeRequired": false,
      "serviceType": "train"
     }
    ]
-  },
+  }
+ ],
+ "crs": "CNM",
+ "filterType": "to",
+ "locationName": "Cheltenham Spa",
+ "nrccMessages": [
+  {
+   "Value": "Trains running&nbsp;in the Wakefield Kirkgate area may be cancelled, delayed by&nbsp;up to 20 minutes&nbsp;or diverted. Latest information can be found in the Disruptions area of the <a href=\"https://www.nationalrail.co.uk/service-disruptions/barnsley-20261112/\">National Rail website</a>."
+  }
+ ],
+ "platformAvailable": true,
+ "trainServices": [
   {
    "destination": [
     {
@@ -255,9 +178,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "20:21",
        "crs": "ASC",
        "detachFront": false,
-       "et": "20:20",
        "isCancelled": false,
        "length": 3,
        "locationName": "Ashchurch for Tewkesbury",
@@ -358,7 +281,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "20:29",
+   "eta": "20:30",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -448,9 +371,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "20:22",
        "crs": "GCR",
        "detachFront": false,
-       "et": "20:21",
        "isCancelled": false,
        "length": 2,
        "locationName": "Gloucester",
@@ -576,9 +499,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "GCR",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 9,
        "locationName": "Gloucester",
@@ -1201,9 +1124,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "20:19",
        "crs": "STJ",
        "detachFront": false,
-       "et": "20:17",
        "isCancelled": false,
        "length": 0,
        "locationName": "Severn Tunnel Junction",
@@ -1212,9 +1135,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "20:21",
        "crs": "CDT",
        "detachFront": false,
-       "et": "20:20",
        "isCancelled": false,
        "length": 0,
        "locationName": "Caldicot",
@@ -1225,7 +1148,7 @@
        "affectedByDiversion": false,
        "crs": "CPW",
        "detachFront": false,
-       "et": "20:28",
+       "et": "20:29",
        "isCancelled": false,
        "length": 0,
        "locationName": "Chepstow",
@@ -1236,7 +1159,7 @@
        "affectedByDiversion": false,
        "crs": "LYD",
        "detachFront": false,
-       "et": "20:36",
+       "et": "20:38",
        "isCancelled": false,
        "length": 0,
        "locationName": "Lydney",
@@ -1247,7 +1170,7 @@
        "affectedByDiversion": false,
        "crs": "GCR",
        "detachFront": false,
-       "et": "On time",
+       "et": "20:58",
        "isCancelled": false,
        "length": 0,
        "locationName": "Gloucester",
@@ -1665,9 +1588,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "BHM",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
