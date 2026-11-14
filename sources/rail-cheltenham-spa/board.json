@@ -17,101 +17,6 @@
    "destination": [
     {
      "assocIsCancelled": false,
-     "crs": "SWI",
-     "locationName": "Swindon"
-    }
-   ],
-   "detachFront": false,
-   "etd": "On time",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 5,
-   "operator": "Great Western Railway",
-   "operatorCode": "GW",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CNM",
-     "locationName": "Cheltenham Spa"
-    }
-   ],
-   "platform": "1",
-   "serviceID": "10716065CHLTNHM_",
-   "serviceType": "train",
-   "std": "05:48",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "GCR",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "05:57"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "SHU",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Stonehouse",
-       "rerouteDelay": 0,
-       "st": "06:16"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "STD",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Stroud",
-       "rerouteDelay": 0,
-       "st": "06:21"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "KEM",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Kemble",
-       "rerouteDelay": 0,
-       "st": "06:36"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "SWI",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 5,
-       "locationName": "Swindon",
-       "rerouteDelay": 0,
-       "st": "06:51"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
-   "destination": [
-    {
-     "assocIsCancelled": false,
      "crs": "CDF",
      "locationName": "Cardiff Central",
      "via": "via Gloucester"
@@ -258,8 +163,8 @@
     }
    ],
    "detachFront": false,
-   "eta": "Delayed",
-   "etd": "Delayed",
+   "eta": "06:52",
+   "etd": "06:53",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -283,9 +188,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "05:52",
        "crs": "BHM",
        "detachFront": false,
-       "et": "Delayed",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
@@ -296,7 +201,7 @@
        "affectedByDiversion": false,
        "crs": "ASC",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "06:44",
        "isCancelled": false,
        "length": 0,
        "locationName": "Ashchurch for Tewkesbury",
@@ -320,7 +225,7 @@
        "affectedByDiversion": false,
        "crs": "GCR",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:02",
        "isCancelled": false,
        "length": 0,
        "locationName": "Gloucester",
@@ -331,7 +236,7 @@
        "affectedByDiversion": false,
        "crs": "LYD",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:21",
        "isCancelled": false,
        "length": 0,
        "locationName": "Lydney",
@@ -342,7 +247,7 @@
        "affectedByDiversion": false,
        "crs": "CPW",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:30",
        "isCancelled": false,
        "length": 0,
        "locationName": "Chepstow",
@@ -353,7 +258,7 @@
        "affectedByDiversion": false,
        "crs": "CDT",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:38",
        "isCancelled": false,
        "length": 0,
        "locationName": "Caldicot",
@@ -364,7 +269,7 @@
        "affectedByDiversion": false,
        "crs": "STJ",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:41",
        "isCancelled": false,
        "length": 0,
        "locationName": "Severn Tunnel Junction",
@@ -375,7 +280,7 @@
        "affectedByDiversion": false,
        "crs": "NWP",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "07:52",
        "isCancelled": false,
        "length": 0,
        "locationName": "Newport (South Wales)",
@@ -386,7 +291,7 @@
        "affectedByDiversion": false,
        "crs": "CDF",
        "detachFront": false,
-       "et": "Delayed",
+       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Cardiff Central",
@@ -1582,7 +1487,7 @@
    "isCancelled": false,
    "isCircularRoute": false,
    "isReverseFormation": false,
-   "length": 0,
+   "length": 3,
    "operator": "Transport for Wales",
    "operatorCode": "AW",
    "origin": [
@@ -1603,7 +1508,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Cardiff Central",
        "rerouteDelay": 0,
        "st": "06:10"
@@ -1614,7 +1519,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Newport (South Wales)",
        "rerouteDelay": 0,
        "st": "06:24"
@@ -1625,7 +1530,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Severn Tunnel Junction",
        "rerouteDelay": 0,
        "st": "06:35"
@@ -1636,7 +1541,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Caldicot",
        "rerouteDelay": 0,
        "st": "06:37"
@@ -1647,7 +1552,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Chepstow",
        "rerouteDelay": 0,
        "st": "06:46"
@@ -1658,7 +1563,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Lydney",
        "rerouteDelay": 0,
        "st": "06:54"
@@ -1669,7 +1574,7 @@
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
-       "length": 0,
+       "length": 3,
        "locationName": "Gloucester",
        "rerouteDelay": 0,
        "st": "07:16"
@@ -1682,6 +1587,101 @@
    "serviceID": "10712544CHLTNHM_",
    "serviceType": "train",
    "sta": "07:28"
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "BRI",
+     "locationName": "Bristol Temple Meads"
+    }
+   ],
+   "detachFront": false,
+   "eta": "On time",
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 0,
+   "operator": "CrossCountry",
+   "operatorCode": "XC",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "BHM",
+     "locationName": "Birmingham New Street"
+    }
+   ],
+   "platform": "1",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "BHM",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Birmingham New Street",
+       "rerouteDelay": 0,
+       "st": "06:42"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "WOP",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Worcestershire Parkway",
+       "rerouteDelay": 0,
+       "st": "07:12"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10696275CHLTNHM_",
+   "serviceType": "train",
+   "sta": "07:27",
+   "std": "07:29",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "BPW",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Bristol Parkway",
+       "rerouteDelay": 0,
+       "st": "07:57"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "BRI",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Bristol Temple Meads",
+       "rerouteDelay": 0,
+       "st": "08:09"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
   }
  ]
 }
