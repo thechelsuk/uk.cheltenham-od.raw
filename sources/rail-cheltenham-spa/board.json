@@ -17,168 +17,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-   "currentOrigins": [
-    {
-     "assocIsCancelled": false,
-     "crs": "BHM",
-     "locationName": "Birmingham New Street"
-    }
-   ],
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "MAN",
-     "locationName": "Manchester Piccadilly",
-     "via": "via Stoke-on-Trent"
-    }
-   ],
-   "detachFront": false,
-   "eta": "Cancelled",
-   "etd": "Cancelled",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": true,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 0,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "BRI",
-     "locationName": "Bristol Temple Meads"
-    }
-   ],
-   "platform": "2",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "BRI",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 0,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": 0,
-       "st": "15:00"
-      },
-      {
-       "affectedByDiversion": false,
-       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
-       "crs": "BPW",
-       "detachFront": false,
-       "et": "Cancelled",
-       "isCancelled": true,
-       "length": 0,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": 0,
-       "st": "15:09"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "rsid": "XC416100",
-   "serviceID": "10724892CHLTNHM_",
-   "serviceType": "train",
-   "sta": "15:38",
-   "std": "15:40",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "BHM",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": 0,
-       "st": "16:30"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "WVH",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Wolverhampton",
-       "rerouteDelay": 0,
-       "st": "16:46"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "STA",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Stafford",
-       "rerouteDelay": 0,
-       "st": "17:02"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "SOT",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Stoke-on-Trent",
-       "rerouteDelay": 0,
-       "st": "17:18"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "MAC",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Macclesfield",
-       "rerouteDelay": 0,
-       "st": "17:36"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "SPT",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Stockport",
-       "rerouteDelay": 0,
-       "st": "17:50"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "MAN",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Manchester Piccadilly",
-       "rerouteDelay": 0,
-       "st": "18:00"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
    "destination": [
     {
      "assocIsCancelled": false,
@@ -187,7 +25,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "15:47",
+   "eta": "15:48",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -277,9 +115,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "15:39",
        "crs": "GCR",
        "detachFront": false,
-       "et": "15:38",
        "isCancelled": false,
        "length": 3,
        "locationName": "Gloucester",
@@ -383,9 +221,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "GCR",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 3,
        "locationName": "Gloucester",
@@ -604,7 +442,7 @@
        "affectedByDiversion": false,
        "crs": "BPW",
        "detachFront": false,
-       "et": "16:30",
+       "et": "16:31",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Parkway",
@@ -615,7 +453,7 @@
        "affectedByDiversion": false,
        "crs": "BRI",
        "detachFront": false,
-       "et": "16:39",
+       "et": "16:40",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Temple Meads",
@@ -959,9 +797,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "BPW",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Bristol Parkway",
@@ -1231,9 +1069,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "UNI",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "University",
@@ -1338,9 +1176,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "WOF",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 5,
        "locationName": "Worcester Foregate Street",
@@ -1455,6 +1293,167 @@
    ]
   },
   {
+   "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "BRI",
+     "locationName": "Bristol Temple Meads"
+    }
+   ],
+   "detachFront": false,
+   "eta": "Cancelled",
+   "etd": "Cancelled",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": true,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 0,
+   "operator": "CrossCountry",
+   "operatorCode": "XC",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "MAN",
+     "locationName": "Manchester Piccadilly"
+    }
+   ],
+   "platform": "1",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "MAN",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Manchester Piccadilly",
+       "rerouteDelay": 0,
+       "st": "14:03"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "SPT",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Stockport",
+       "rerouteDelay": 0,
+       "st": "14:13"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "MAC",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Macclesfield",
+       "rerouteDelay": 0,
+       "st": "14:26"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "SOT",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Stoke-on-Trent",
+       "rerouteDelay": 0,
+       "st": "14:44"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "STA",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Stafford",
+       "rerouteDelay": 0,
+       "st": "15:00"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "WVH",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Wolverhampton",
+       "rerouteDelay": 0,
+       "st": "15:15"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "BHM",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Birmingham New Street",
+       "rerouteDelay": 0,
+       "st": "15:40"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "rsid": "XC466100",
+   "serviceID": "10735301CHLTNHM_",
+   "serviceType": "train",
+   "sta": "16:27",
+   "std": "16:29",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "BPW",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Bristol Parkway",
+       "rerouteDelay": 0,
+       "st": "16:57"
+      },
+      {
+       "affectedByDiversion": false,
+       "cancelReason": "This service has been cancelled because of a shortage of train drivers",
+       "crs": "BRI",
+       "detachFront": false,
+       "et": "Cancelled",
+       "isCancelled": true,
+       "length": 0,
+       "locationName": "Bristol Temple Meads",
+       "rerouteDelay": 0,
+       "st": "17:07"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  },
+  {
    "destination": [
     {
      "assocIsCancelled": false,
@@ -1498,9 +1497,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "15:38",
        "crs": "KEM",
        "detachFront": false,
-       "et": "15:38",
        "isCancelled": false,
        "length": 5,
        "locationName": "Kemble",
