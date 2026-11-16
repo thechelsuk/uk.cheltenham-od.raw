@@ -47,8 +47,11 @@ jobs:
                       exit 0
                   fi
                   git commit -q -m "Capture $(date -u '+%Y-%m-%d %H:%M') UTC"
+                  # Another writer can push the same files in between. In a rebase, "theirs" is this run's commit,
+                  # so -X theirs keeps this newer capture where both changed a file; a failed try is aborted first.
                   for attempt in 1 2 3; do
-                      git pull -q --rebase && git push -q && exit 0
+                      git pull -q --rebase -X theirs && git push -q && exit 0
+                      git rebase --abort 2>/dev/null || true
                       sleep 5
                   done
                   exit 1
