@@ -697,6 +697,129 @@
     }
    ],
    "situationVersionTime": "2026-11-18T02:43:33.33Z"
+  },
+  {
+   "headerInformation": {
+    "confidentiality": "noRestriction",
+    "informationStatus": "real"
+   },
+   "idG": "signs/M5-S7972K",
+   "situationRecord": [
+    {
+     "sitRoadOrCarriagewayOrLaneManagement": {
+      "cause": {
+       "causeType": "roadOrCarriagewayOrLaneManagement",
+       "detailedCauseType": {
+        "roadOrCarriagewayOrLaneManagementType": {
+         "value": "laneClosures"
+        }
+       }
+      },
+      "complianceOption": "mandatory",
+      "generalPublicComment": [
+       {
+        "comment": "laneClosures"
+       }
+      ],
+      "idG": "7-1795037022-c29dde06-01c4-45c1-b36b-55a1ef36c2ee-close",
+      "locationReference": {
+       "locLinearLocation": {
+        "gmlLineString": {
+         "locGmlLineString": {
+          "posList": "51.797481 -2.288687 51.79747 -2.288784 51.797449 -2.288898 51.797346 -2.289196 51.797234 -2.289466 51.797077 -2.289806 51.796942 -2.290041 51.796799 -2.290269 51.796617 -2.290541 51.796361 -2.29091 51.795879 -2.291658 51.795315 -2.292303 51.794864 -2.292764 51.792945 -2.294655 51.791846 -2.295706 51.791424 -2.296119",
+          "srsDimension": 2,
+          "srsName": "ESPG::4326"
+         }
+        },
+        "supplementaryPositionalDescription": {
+         "carriageway": [
+          {
+           "carriageway": {
+            "extendedValueG": "",
+            "value": "slipRoads"
+           },
+           "carriagewayExtensionG": {
+            "impactOnCarriageway": {
+             "numberOfLanesRestricted": 0,
+             "numberOfOperationalLanes": 2
+            }
+           },
+           "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 1,
+             "laneUsage": {
+              "extendedValueG": "cl1",
+              "value": "extendedG"
+             }
+            }
+           ]
+          }
+         ],
+         "locationDescription": "M5 J12 southbound access"
+        }
+       },
+       "locSingleRoadLinearLocation": {
+        "linearWithinLinearElement": [
+         {
+          "directionOnLinearSection": "southBound",
+          "directionRelativeOnLinearSection": "aligned",
+          "fromPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 15.0
+           }
+          },
+          "heightGradeOfLinearSection": {
+           "extendedValueG": "start1End1",
+           "value": "extendedG"
+          },
+          "linearElement": {
+           "locLinearElementByCode": {
+            "linearElementByCodeExtensionG": {
+             "linearElementType": "aCarriagewayEntrySlip"
+            },
+            "linearElementIdentifier": "{B510D2B5-795B-40CA-8A60-1B73C3C5ABBC}",
+            "linearElementReferenceModel": "The Network Model",
+            "roadName": "M5"
+           }
+          },
+          "toPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 1676.0
+           }
+          }
+         }
+        ]
+       }
+      },
+      "probabilityOfOccurrence": "certain",
+      "roadOrCarriagewayOrLaneManagementType": {
+       "value": "laneClosures"
+      },
+      "situationRecordCreationTime": "2026-11-18T21:22:36.36Z",
+      "situationRecordVersionTime": "2026-11-18T21:33:41.41Z",
+      "source": {
+       "sourceIdentification": "Signs and Signals"
+      },
+      "validity": {
+       "validityStatus": "active",
+       "validityTimeSpecification": {
+        "overallEndTime": "2026-11-18T21:37:36.36Z",
+        "overallStartTime": "2026-11-18T21:22:36.36Z"
+       }
+      },
+      "versionG": "1"
+     }
+    }
+   ],
+   "situationVersionTime": "2026-11-18T21:33:41.41Z"
   }
  ]
 }
