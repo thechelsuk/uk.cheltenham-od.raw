@@ -1,3 +1,127 @@
 {
- "situation": []
+ "situation": [
+  {
+   "headerInformation": {
+    "confidentiality": "noRestriction",
+    "informationStatus": "real"
+   },
+   "idG": "signs/M5-S7442B",
+   "situationRecord": [
+    {
+     "sitRoadOrCarriagewayOrLaneManagement": {
+      "cause": {
+       "causeType": "roadOrCarriagewayOrLaneManagement",
+       "detailedCauseType": {
+        "roadOrCarriagewayOrLaneManagementType": {
+         "value": "laneClosures"
+        }
+       }
+      },
+      "complianceOption": "mandatory",
+      "generalPublicComment": [
+       {
+        "comment": "laneClosures"
+       }
+      ],
+      "idG": "7-1794966917-667d6dfc-2188-40c2-9ffe-72ed152a1861-close",
+      "locationReference": {
+       "locLinearLocation": {
+        "gmlLineString": {
+         "locGmlLineString": {
+          "posList": "52.210407 -2.159201 52.210482 -2.159165 52.211112 -2.158862 52.212075 -2.158397 52.212282 -2.158296 52.212821 -2.158019 52.213388 -2.157714 52.213541 -2.157627 52.213784 -2.157481 52.214396 -2.157059 52.214747 -2.156797 52.215413 -2.156272 52.216043 -2.155704 52.217779 -2.153935 52.217807 -2.153895 52.218078 -2.153559 52.218339 -2.153209 52.218447 -2.153063 52.218654 -2.152785 52.219113 -2.152187 52.219521 -2.151636 52.219648 -2.151464 52.219738 -2.151339 52.219752 -2.15132",
+          "srsDimension": 2,
+          "srsName": "ESPG::4326"
+         }
+        },
+        "supplementaryPositionalDescription": {
+         "carriageway": [
+          {
+           "carriageway": {
+            "extendedValueG": "dualCarriageway",
+            "value": "extendedG"
+           },
+           "carriagewayExtensionG": {
+            "impactOnCarriageway": {
+             "numberOfLanesRestricted": 0,
+             "numberOfOperationalLanes": 4
+            }
+           },
+           "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 2,
+             "laneUsage": {
+              "extendedValueG": "cl2",
+              "value": "extendedG"
+             }
+            }
+           ]
+          }
+         ],
+         "locationDescription": "M5 northbound within J6"
+        }
+       },
+       "locSingleRoadLinearLocation": {
+        "linearWithinLinearElement": [
+         {
+          "directionOnLinearSection": "northBound",
+          "directionRelativeOnLinearSection": "aligned",
+          "fromPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 270.0
+           }
+          },
+          "heightGradeOfLinearSection": {
+           "extendedValueG": "start1End1",
+           "value": "extendedG"
+          },
+          "linearElement": {
+           "locLinearElementByCode": {
+            "linearElementByCodeExtensionG": {
+             "linearElementType": "bCarriageway"
+            },
+            "linearElementIdentifier": "{7ABAB695-2121-4FBD-967D-980DEF934A76}",
+            "linearElementReferenceModel": "The Network Model",
+            "roadName": "M5"
+           }
+          },
+          "toPoint": {
+           "locDistanceFromLinearElementStart": {
+            "distanceAlong": 143.0
+           }
+          }
+         }
+        ]
+       }
+      },
+      "probabilityOfOccurrence": "certain",
+      "roadOrCarriagewayOrLaneManagementType": {
+       "value": "laneClosures"
+      },
+      "situationRecordCreationTime": "2026-11-18T01:47:05.05Z",
+      "situationRecordVersionTime": "2026-11-18T02:07:35.35Z",
+      "source": {
+       "sourceIdentification": "Signs and Signals"
+      },
+      "validity": {
+       "validityStatus": "active",
+       "validityTimeSpecification": {
+        "overallEndTime": "2026-11-18T02:02:05.05Z",
+        "overallStartTime": "2026-11-18T01:47:05.05Z"
+       }
+      },
+      "versionG": "1"
+     }
+    }
+   ],
+   "situationVersionTime": "2026-11-18T02:07:35.35Z"
+  }
+ ]
 }
