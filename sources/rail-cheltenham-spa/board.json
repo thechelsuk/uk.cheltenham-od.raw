@@ -14,129 +14,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CNM",
-     "locationName": "Cheltenham Spa"
-    }
-   ],
-   "detachFront": false,
-   "eta": "22:35",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 2,
-   "operator": "Transport for Wales",
-   "operatorCode": "AW",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CDF",
-     "locationName": "Cardiff Central"
-    }
-   ],
-   "platform": "2",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "CDF",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Cardiff Central",
-       "rerouteDelay": 0,
-       "st": "21:10"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NWP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Newport (South Wales)",
-       "rerouteDelay": 0,
-       "st": "21:24"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "21:38",
-       "crs": "STJ",
-       "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Severn Tunnel Junction",
-       "rerouteDelay": 0,
-       "st": "21:34"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "21:41",
-       "crs": "CDT",
-       "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Caldicot",
-       "rerouteDelay": 0,
-       "st": "21:37"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "21:50",
-       "crs": "CPW",
-       "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Chepstow",
-       "rerouteDelay": 0,
-       "st": "21:45"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "21:59",
-       "crs": "LYD",
-       "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Lydney",
-       "rerouteDelay": 0,
-       "st": "21:54"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "22:26",
-       "crs": "GCR",
-       "delayReason": "This service has been delayed by the train departing late to maintain customer connections",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 2,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "22:16"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10937350CHLTNHM_",
-   "serviceType": "train",
-   "sta": "22:25"
-  },
-  {
    "destination": [
     {
      "assocIsCancelled": false,
@@ -170,9 +47,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "22:33",
        "crs": "WOS",
        "detachFront": false,
-       "et": "22:33",
        "isCancelled": false,
        "length": 3,
        "locationName": "Worcester Shrub Hill",
@@ -347,7 +224,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "23:27",
+   "eta": "23:31",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -393,9 +270,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "22:43",
        "crs": "STJ",
        "detachFront": false,
-       "et": "22:41",
        "isCancelled": false,
        "length": 2,
        "locationName": "Severn Tunnel Junction",
@@ -406,7 +283,7 @@
        "affectedByDiversion": false,
        "crs": "CDT",
        "detachFront": false,
-       "et": "22:43",
+       "et": "22:47",
        "isCancelled": false,
        "length": 2,
        "locationName": "Caldicot",
@@ -417,7 +294,7 @@
        "affectedByDiversion": false,
        "crs": "CPW",
        "detachFront": false,
-       "et": "22:52",
+       "et": "22:56",
        "isCancelled": false,
        "length": 2,
        "locationName": "Chepstow",
@@ -428,7 +305,7 @@
        "affectedByDiversion": false,
        "crs": "LYD",
        "detachFront": false,
-       "et": "23:00",
+       "et": "23:04",
        "isCancelled": false,
        "length": 2,
        "locationName": "Lydney",
@@ -439,7 +316,7 @@
        "affectedByDiversion": false,
        "crs": "GCR",
        "detachFront": false,
-       "et": "23:19",
+       "et": "23:23",
        "isCancelled": false,
        "length": 2,
        "locationName": "Gloucester",
