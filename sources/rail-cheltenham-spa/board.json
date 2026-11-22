@@ -9,642 +9,6 @@
  "platformAvailable": true,
  "trainServices": [
   {
-   "delayReason": "This service has been delayed by a late running train being in front of this one",
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CNM",
-     "locationName": "Cheltenham Spa"
-    }
-   ],
-   "detachFront": false,
-   "eta": "19:50",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 9,
-   "operator": "Great Western Railway",
-   "operatorCode": "GW",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "PAD",
-     "locationName": "London Paddington"
-    }
-   ],
-   "platform": "2",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "PAD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "London Paddington",
-       "rerouteDelay": 0,
-       "st": "17:33"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:06",
-       "crs": "RDG",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Reading",
-       "rerouteDelay": 0,
-       "st": "18:01"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:21",
-       "crs": "DID",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Didcot Parkway",
-       "rerouteDelay": 0,
-       "st": "18:14"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:41",
-       "crs": "SWI",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Swindon",
-       "rerouteDelay": 0,
-       "st": "18:32"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:56",
-       "crs": "KEM",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Kemble",
-       "rerouteDelay": 0,
-       "st": "18:45"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:12",
-       "crs": "STD",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Stroud",
-       "rerouteDelay": 0,
-       "st": "19:00"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:17",
-       "crs": "SHU",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Stonehouse",
-       "rerouteDelay": 0,
-       "st": "19:04"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:40",
-       "crs": "GCR",
-       "delayReason": "This service has been delayed by a late running train being in front of this one",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 9,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "19:23"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "rsid": "GW371900",
-   "serviceID": "10961031CHLTNHM_",
-   "serviceType": "train",
-   "sta": "19:32"
-  },
-  {
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CNM",
-     "locationName": "Cheltenham Spa"
-    }
-   ],
-   "detachFront": false,
-   "eta": "On time",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 3,
-   "operator": "Transport for Wales",
-   "operatorCode": "AW",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "CDF",
-     "locationName": "Cardiff Central"
-    }
-   ],
-   "platform": "2",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "CDF",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Cardiff Central",
-       "rerouteDelay": 0,
-       "st": "18:29"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NWP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Newport (South Wales)",
-       "rerouteDelay": 0,
-       "st": "18:43"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "STJ",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Severn Tunnel Junction",
-       "rerouteDelay": 0,
-       "st": "18:55"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "CDT",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Caldicot",
-       "rerouteDelay": 0,
-       "st": "18:57"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "CPW",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Chepstow",
-       "rerouteDelay": 0,
-       "st": "19:06"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "LYD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Lydney",
-       "rerouteDelay": 0,
-       "st": "19:14"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:38",
-       "crs": "GCR",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 3,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "19:36"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10963885CHLTNHM_",
-   "serviceType": "train",
-   "sta": "19:46"
-  },
-  {
-   "destination": [
-    {
-     "assocIsCancelled": false,
-     "crs": "PLY",
-     "locationName": "Plymouth"
-    }
-   ],
-   "detachFront": false,
-   "eta": "On time",
-   "etd": "On time",
-   "filterLocationCancelled": false,
-   "futureCancellation": false,
-   "futureDelay": false,
-   "isCancelled": false,
-   "isCircularRoute": false,
-   "isReverseFormation": false,
-   "length": 0,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
-   "origin": [
-    {
-     "assocIsCancelled": false,
-     "crs": "DEE",
-     "locationName": "Dundee"
-    }
-   ],
-   "platform": "1",
-   "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DEE",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Dundee",
-       "rerouteDelay": 0,
-       "st": "12:22"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "No report",
-       "crs": "LEU",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Leuchars",
-       "rerouteDelay": 0,
-       "st": "12:35"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "12:46",
-       "crs": "CUP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Cupar",
-       "rerouteDelay": 0,
-       "st": "12:42"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "12:52",
-       "crs": "LDY",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Ladybank",
-       "rerouteDelay": 0,
-       "st": "12:49"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "13:00",
-       "crs": "MNC",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Markinch",
-       "rerouteDelay": 0,
-       "st": "12:57"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "13:09",
-       "crs": "KDY",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Kirkcaldy",
-       "rerouteDelay": 0,
-       "st": "13:07"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "13:29",
-       "crs": "INK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Inverkeithing",
-       "rerouteDelay": 0,
-       "st": "13:23"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "13:43",
-       "crs": "HYM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Haymarket",
-       "rerouteDelay": 0,
-       "st": "13:39"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "EDB",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Edinburgh",
-       "rerouteDelay": 0,
-       "st": "14:08"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BWK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Berwick-upon-Tweed",
-       "rerouteDelay": 0,
-       "st": "14:49"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "MPT",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Morpeth",
-       "rerouteDelay": 0,
-       "st": "15:21"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "NCL",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Newcastle",
-       "rerouteDelay": 0,
-       "st": "15:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DHM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Durham",
-       "rerouteDelay": 0,
-       "st": "15:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "DAR",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Darlington",
-       "rerouteDelay": 0,
-       "st": "16:10"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "YRK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "York",
-       "rerouteDelay": 0,
-       "st": "16:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "LDS",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Leeds",
-       "rerouteDelay": 0,
-       "st": "17:15"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:29",
-       "crs": "WKF",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Wakefield Westgate",
-       "rerouteDelay": 0,
-       "st": "17:27"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "SHF",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Sheffield",
-       "rerouteDelay": 0,
-       "st": "17:56"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:13",
-       "crs": "CHD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Chesterfield",
-       "rerouteDelay": 0,
-       "st": "18:09"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:32",
-       "crs": "DBY",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Derby",
-       "rerouteDelay": 0,
-       "st": "18:28"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:51",
-       "crs": "TAM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tamworth",
-       "rerouteDelay": 0,
-       "st": "18:46"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "BHM",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Birmingham New Street",
-       "rerouteDelay": 0,
-       "st": "19:12"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "rsid": "XC175100",
-   "serviceID": "10950158CHLTNHM_",
-   "serviceType": "train",
-   "sta": "19:52",
-   "std": "19:54",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "BPW",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": 0,
-       "st": "20:22"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "BRI",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": 0,
-       "st": "20:35"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "TAU",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Taunton",
-       "rerouteDelay": 0,
-       "st": "21:48"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "TVP",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tiverton Parkway",
-       "rerouteDelay": 0,
-       "st": "22:28"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "EXD",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Exeter St Davids",
-       "rerouteDelay": 0,
-       "st": "22:44"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "NTA",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Newton Abbot",
-       "rerouteDelay": 0,
-       "st": "23:04"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "TOT",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Totnes",
-       "rerouteDelay": 0,
-       "st": "23:17"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "PLY",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Plymouth",
-       "rerouteDelay": 0,
-       "st": "23:44"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
-  },
-  {
    "destination": [
     {
      "assocIsCancelled": false,
@@ -653,7 +17,7 @@
     }
    ],
    "detachFront": false,
-   "etd": "On time",
+   "etd": "20:02",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -682,7 +46,7 @@
        "affectedByDiversion": false,
        "crs": "GCR",
        "detachFront": false,
-       "et": "On time",
+       "et": "20:11",
        "isCancelled": false,
        "length": 9,
        "locationName": "Gloucester",
@@ -1120,9 +484,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "WOP",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Worcestershire Parkway",
@@ -1228,9 +592,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "19:58",
        "crs": "WOS",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 5,
        "locationName": "Worcester Shrub Hill",
@@ -1388,9 +752,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "STD",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stroud",
@@ -1399,9 +763,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "SHU",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 5,
        "locationName": "Stonehouse",
@@ -1509,6 +873,555 @@
        "locationName": "Birmingham New Street",
        "rerouteDelay": 0,
        "st": "21:18"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "WOS",
+     "locationName": "Worcester Shrub Hill"
+    }
+   ],
+   "detachFront": false,
+   "eta": "On time",
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 5,
+   "operator": "Great Western Railway",
+   "operatorCode": "GW",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "BRI",
+     "locationName": "Bristol Temple Meads"
+    }
+   ],
+   "platform": "2",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "BRI",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Bristol Temple Meads",
+       "rerouteDelay": 0,
+       "st": "19:38"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "FIT",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Filton Abbey Wood",
+       "rerouteDelay": 0,
+       "st": "19:46"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "BPW",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Bristol Parkway",
+       "rerouteDelay": 0,
+       "st": "19:50"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "20:01",
+       "crs": "YAE",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Yate",
+       "rerouteDelay": 0,
+       "st": "19:59"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CDU",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Cam & Dursley",
+       "rerouteDelay": 0,
+       "st": "20:13"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "20:36"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10963857CHLTNHM_",
+   "serviceType": "train",
+   "sta": "20:46",
+   "std": "20:46",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "ASC",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Ashchurch for Tewkesbury",
+       "rerouteDelay": 0,
+       "st": "20:54"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "WOS",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 5,
+       "locationName": "Worcester Shrub Hill",
+       "rerouteDelay": 0,
+       "st": "21:11"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "BRI",
+     "locationName": "Bristol Temple Meads"
+    }
+   ],
+   "detachFront": false,
+   "eta": "20:56",
+   "etd": "20:57",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 0,
+   "operator": "CrossCountry",
+   "operatorCode": "XC",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "EDB",
+     "locationName": "Edinburgh"
+    }
+   ],
+   "platform": "1",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "EDB",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Edinburgh",
+       "rerouteDelay": 0,
+       "st": "15:05"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "BWK",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Berwick-upon-Tweed",
+       "rerouteDelay": 0,
+       "st": "15:46"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "16:10",
+       "crs": "ALM",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Alnmouth",
+       "rerouteDelay": 0,
+       "st": "16:07"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "NCL",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Newcastle",
+       "rerouteDelay": 0,
+       "st": "16:40"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "16:55",
+       "crs": "DHM",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Durham",
+       "rerouteDelay": 0,
+       "st": "16:53"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "DAR",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Darlington",
+       "rerouteDelay": 0,
+       "st": "17:12"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "17:44",
+       "crs": "YRK",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "York",
+       "rerouteDelay": 0,
+       "st": "17:41"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "LDS",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Leeds",
+       "rerouteDelay": 0,
+       "st": "18:15"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "18:31",
+       "crs": "WKF",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Wakefield Westgate",
+       "rerouteDelay": 0,
+       "st": "18:27"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "19:11",
+       "crs": "SHF",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Sheffield",
+       "rerouteDelay": 0,
+       "st": "18:56"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "19:26",
+       "crs": "CHD",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Chesterfield",
+       "rerouteDelay": 0,
+       "st": "19:09"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "19:46",
+       "crs": "DBY",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Derby",
+       "rerouteDelay": 0,
+       "st": "19:31"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "19:57",
+       "crs": "BUT",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Burton-on-Trent",
+       "rerouteDelay": 0,
+       "st": "19:41"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "BHM",
+       "detachFront": false,
+       "et": "20:21",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Birmingham New Street",
+       "rerouteDelay": 0,
+       "st": "20:12"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10960556CHLTNHM_",
+   "serviceType": "train",
+   "sta": "20:50",
+   "std": "20:52",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "BPW",
+       "detachFront": false,
+       "et": "21:25",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Bristol Parkway",
+       "rerouteDelay": 0,
+       "st": "21:20"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "BRI",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Bristol Temple Meads",
+       "rerouteDelay": 0,
+       "st": "21:34"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ]
+  },
+  {
+   "destination": [
+    {
+     "assocIsCancelled": false,
+     "crs": "LEI",
+     "locationName": "Leicester"
+    }
+   ],
+   "detachFront": false,
+   "eta": "On time",
+   "etd": "On time",
+   "filterLocationCancelled": false,
+   "futureCancellation": false,
+   "futureDelay": false,
+   "isCancelled": false,
+   "isCircularRoute": false,
+   "isReverseFormation": false,
+   "length": 0,
+   "operator": "CrossCountry",
+   "operatorCode": "XC",
+   "origin": [
+    {
+     "assocIsCancelled": false,
+     "crs": "CDF",
+     "locationName": "Cardiff Central"
+    }
+   ],
+   "platform": "2",
+   "previousCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "CDF",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Cardiff Central",
+       "rerouteDelay": 0,
+       "st": "19:45"
+      },
+      {
+       "affectedByDiversion": false,
+       "at": "On time",
+       "crs": "NWP",
+       "detachFront": false,
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Newport (South Wales)",
+       "rerouteDelay": 0,
+       "st": "19:59"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "20:49"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10950105CHLTNHM_",
+   "serviceType": "train",
+   "sta": "20:58",
+   "std": "20:59",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
+      {
+       "affectedByDiversion": false,
+       "crs": "WOP",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Worcestershire Parkway",
+       "rerouteDelay": 0,
+       "st": "21:13"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "UNI",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "University",
+       "rerouteDelay": 0,
+       "st": "21:38"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "BHM",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Birmingham New Street",
+       "rerouteDelay": 0,
+       "st": "21:45"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "CEH",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Coleshill Parkway",
+       "rerouteDelay": 0,
+       "st": "22:05"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "NUN",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Nuneaton",
+       "rerouteDelay": 0,
+       "st": "22:20"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "HNK",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Hinckley",
+       "rerouteDelay": 0,
+       "st": "22:27"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "NBR",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Narborough",
+       "rerouteDelay": 0,
+       "st": "22:36"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "SWS",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "South Wigston",
+       "rerouteDelay": 0,
+       "st": "22:41"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "LEI",
+       "detachFront": false,
+       "et": "On time",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Leicester",
+       "rerouteDelay": 0,
+       "st": "22:48"
       }
      ],
      "serviceChangeRequired": false,
