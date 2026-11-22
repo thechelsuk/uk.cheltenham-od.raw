@@ -3,22 +3,18 @@
   "Count": 8
  },
  "areServicesAvailable": true,
- "crs": "CNM",
- "filterType": "to",
- "locationName": "Cheltenham Spa",
- "platformAvailable": true,
- "trainServices": [
+ "busServices": [
   {
    "destination": [
     {
      "assocIsCancelled": false,
-     "crs": "LDS",
-     "locationName": "Leeds"
+     "crs": "BRI",
+     "locationName": "Bristol Temple Meads"
     }
    ],
    "detachFront": false,
-   "eta": "21:31",
-   "etd": "21:32",
+   "eta": "On time",
+   "etd": "On time",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -31,190 +27,12 @@
    "origin": [
     {
      "assocIsCancelled": false,
-     "crs": "PNZ",
-     "locationName": "Penzance"
+     "crs": "BHM",
+     "locationName": "Birmingham New Street"
     }
    ],
-   "platform": "2",
+   "platform": "BUS",
    "previousCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "at": "15:39",
-       "crs": "PNZ",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Penzance",
-       "rerouteDelay": 0,
-       "st": "15:37"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "15:48",
-       "crs": "SER",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "St Erth",
-       "rerouteDelay": 0,
-       "st": "15:45"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "16:02",
-       "crs": "RED",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Redruth",
-       "rerouteDelay": 0,
-       "st": "15:59"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "TRU",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Truro",
-       "rerouteDelay": 0,
-       "st": "16:12"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "On time",
-       "crs": "SAU",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "St Austell",
-       "rerouteDelay": 0,
-       "st": "16:29"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:14",
-       "crs": "BOD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bodmin Parkway",
-       "rerouteDelay": 0,
-       "st": "16:44"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:30",
-       "crs": "LSK",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Liskeard",
-       "rerouteDelay": 0,
-       "st": "16:56"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "17:59",
-       "crs": "PLY",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Plymouth",
-       "rerouteDelay": 0,
-       "st": "17:27"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:26",
-       "crs": "TOT",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Totnes",
-       "rerouteDelay": 0,
-       "st": "17:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "18:38",
-       "crs": "NTA",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Newton Abbot",
-       "rerouteDelay": 0,
-       "st": "18:06"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:02",
-       "crs": "EXD",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Exeter St Davids",
-       "rerouteDelay": 0,
-       "st": "18:27"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:17",
-       "crs": "TVP",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tiverton Parkway",
-       "rerouteDelay": 0,
-       "st": "18:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "19:30",
-       "crs": "TAU",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Taunton",
-       "rerouteDelay": 0,
-       "st": "18:53"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "20:47",
-       "crs": "BRI",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": 0,
-       "st": "20:32"
-      },
-      {
-       "affectedByDiversion": false,
-       "at": "20:58",
-       "crs": "BPW",
-       "detachFront": false,
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": 0,
-       "st": "20:41"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ],
-   "serviceID": "10952083CHLTNHM_",
-   "serviceType": "train",
-   "sta": "21:09",
-   "std": "21:11",
-   "subsequentCallingPoints": [
     {
      "assocIsCancelled": false,
      "callingPoint": [
@@ -222,74 +40,60 @@
        "affectedByDiversion": false,
        "crs": "BHM",
        "detachFront": false,
-       "et": "22:08",
+       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Birmingham New Street",
        "rerouteDelay": 0,
-       "st": "21:49"
-      },
+       "st": "22:25"
+      }
+     ],
+     "serviceChangeRequired": false,
+     "serviceType": "train"
+    }
+   ],
+   "serviceID": "10999626CHLTNHM_",
+   "serviceType": "bus",
+   "sta": "23:45",
+   "std": "23:45",
+   "subsequentCallingPoints": [
+    {
+     "assocIsCancelled": false,
+     "callingPoint": [
       {
        "affectedByDiversion": false,
-       "crs": "TAM",
-       "detachFront": false,
-       "et": "22:23",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Tamworth",
-       "rerouteDelay": 0,
-       "st": "22:18"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "DBY",
-       "detachFront": false,
-       "et": "22:41",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Derby",
-       "rerouteDelay": 0,
-       "st": "22:37"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "CHD",
+       "crs": "BPW",
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
        "length": 0,
-       "locationName": "Chesterfield",
+       "locationName": "Bristol Parkway",
        "rerouteDelay": 0,
-       "st": "23:02"
+       "st": "00:35"
       },
       {
        "affectedByDiversion": false,
-       "crs": "SHF",
+       "crs": "BRI",
        "detachFront": false,
        "et": "On time",
        "isCancelled": false,
        "length": 0,
-       "locationName": "Sheffield",
+       "locationName": "Bristol Temple Meads",
        "rerouteDelay": 0,
-       "st": "23:18"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "LDS",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Leeds",
-       "rerouteDelay": 0,
-       "st": "00:08"
+       "st": "00:55"
       }
      ],
      "serviceChangeRequired": false,
      "serviceType": "train"
     }
    ]
-  },
+  }
+ ],
+ "crs": "CNM",
+ "filterType": "to",
+ "locationName": "Cheltenham Spa",
+ "platformAvailable": true,
+ "trainServices": [
   {
    "destination": [
     {
@@ -808,9 +612,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "KEM",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 9,
        "locationName": "Kemble",
@@ -1117,9 +921,9 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "On time",
        "crs": "BUT",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Burton-on-Trent",
