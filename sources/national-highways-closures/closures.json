@@ -23,7 +23,7 @@
         "comment": "laneClosures"
        }
       ],
-      "idG": "7-1795353575-c1c70a18-4fd1-4d19-95e1-fb386f906575-close",
+      "idG": "7-1795355632-aa7d3834-3d75-4612-a818-1d2e94ac7665-close",
       "locationReference": {
        "locLinearLocation": {
         "gmlLineString": {
@@ -42,11 +42,26 @@
            },
            "carriagewayExtensionG": {
             "impactOnCarriageway": {
-             "numberOfLanesRestricted": 0,
-             "numberOfOperationalLanes": 4
+             "numberOfLanesRestricted": 1,
+             "numberOfOperationalLanes": 3
             }
            },
            "lane": [
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Closed"
+               }
+              }
+             },
+             "laneNumber": 1,
+             "laneUsage": {
+              "extendedValueG": "cl1",
+              "value": "extendedG"
+             }
+            },
             {
              "laneExtensionG": {
               "impactOnLanes": {
@@ -59,6 +74,36 @@
              "laneNumber": 2,
              "laneUsage": {
               "extendedValueG": "cl2",
+              "value": "extendedG"
+             }
+            },
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 3,
+             "laneUsage": {
+              "extendedValueG": "cl3",
+              "value": "extendedG"
+             }
+            },
+            {
+             "laneExtensionG": {
+              "impactOnLanes": {
+               "impactExtensionG": {
+                "laneImpactDirection": "aligned",
+                "lanesStatus": "Open"
+               }
+              }
+             },
+             "laneNumber": 4,
+             "laneUsage": {
+              "extendedValueG": "cl4",
               "value": "extendedG"
              }
             }
@@ -105,23 +150,23 @@
       "roadOrCarriagewayOrLaneManagementType": {
        "value": "laneClosures"
       },
-      "situationRecordCreationTime": "2026-11-22T13:08:29.29Z",
-      "situationRecordVersionTime": "2026-11-22T13:28:49.49Z",
+      "situationRecordCreationTime": "2026-11-22T13:51:55.55Z",
+      "situationRecordVersionTime": "2026-11-22T14:03:03.03Z",
       "source": {
        "sourceIdentification": "Signs and Signals"
       },
       "validity": {
-       "validityStatus": "active",
+       "validityStatus": "suspended",
        "validityTimeSpecification": {
-        "overallEndTime": "2026-11-22T13:23:29.29Z",
-        "overallStartTime": "2026-11-22T13:08:29.29Z"
+        "overallEndTime": "2026-11-22T14:06:55.55Z",
+        "overallStartTime": "2026-11-22T13:51:55.55Z"
        }
       },
       "versionG": "1"
      }
     }
    ],
-   "situationVersionTime": "2026-11-22T13:28:49.49Z"
+   "situationVersionTime": "2026-11-22T14:03:03.03Z"
   }
  ]
 }
