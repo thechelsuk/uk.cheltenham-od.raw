@@ -8,14 +8,12 @@
    "destination": [
     {
      "assocIsCancelled": false,
-     "crs": "BRI",
-     "locationName": "Bristol Temple Meads",
-     "via": "via Gloucester"
+     "crs": "CNM",
+     "locationName": "Cheltenham Spa"
     }
    ],
    "detachFront": false,
-   "eta": "On time",
-   "etd": "On time",
+   "eta": "01:42",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -23,13 +21,13 @@
    "isCircularRoute": false,
    "isReverseFormation": false,
    "length": 0,
-   "operator": "CrossCountry",
-   "operatorCode": "XC",
+   "operator": "Great Western Railway",
+   "operatorCode": "GW",
    "origin": [
     {
      "assocIsCancelled": false,
-     "crs": "BHM",
-     "locationName": "Birmingham New Street"
+     "crs": "SWI",
+     "locationName": "Swindon"
     }
    ],
    "platform": "BUS",
@@ -39,66 +37,67 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
-       "crs": "BHM",
+       "at": "23:47",
+       "crs": "SWI",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
-       "locationName": "Birmingham New Street",
+       "locationName": "Swindon",
        "rerouteDelay": 0,
-       "st": "22:25"
+       "st": "23:45"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "KEM",
+       "detachFront": false,
+       "et": "00:17",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Kemble",
+       "rerouteDelay": 0,
+       "st": "00:15"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "STD",
+       "detachFront": false,
+       "et": "00:47",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Stroud",
+       "rerouteDelay": 0,
+       "st": "00:45"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "SHU",
+       "detachFront": false,
+       "et": "00:57",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Stonehouse",
+       "rerouteDelay": 0,
+       "st": "00:55"
+      },
+      {
+       "affectedByDiversion": false,
+       "crs": "GCR",
+       "detachFront": false,
+       "et": "01:22",
+       "isCancelled": false,
+       "length": 0,
+       "locationName": "Gloucester",
+       "rerouteDelay": 0,
+       "st": "01:20"
       }
      ],
      "serviceChangeRequired": false,
      "serviceType": "train"
     }
    ],
-   "serviceID": "11034521CHLTNHM_",
+   "serviceID": "11025512CHLTNHM_",
    "serviceType": "bus",
-   "sta": "23:45",
-   "std": "23:45",
-   "subsequentCallingPoints": [
-    {
-     "assocIsCancelled": false,
-     "callingPoint": [
-      {
-       "affectedByDiversion": false,
-       "crs": "GCR",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Gloucester",
-       "rerouteDelay": 0,
-       "st": "23:58"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "BPW",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Parkway",
-       "rerouteDelay": 0,
-       "st": "00:40"
-      },
-      {
-       "affectedByDiversion": false,
-       "crs": "BRI",
-       "detachFront": false,
-       "et": "On time",
-       "isCancelled": false,
-       "length": 0,
-       "locationName": "Bristol Temple Meads",
-       "rerouteDelay": 0,
-       "st": "00:55"
-      }
-     ],
-     "serviceChangeRequired": false,
-     "serviceType": "train"
-    }
-   ]
+   "sta": "01:40"
   }
  ],
  "crs": "CNM",
