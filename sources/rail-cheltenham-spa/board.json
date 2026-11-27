@@ -5,6 +5,7 @@
  "areServicesAvailable": true,
  "busServices": [
   {
+   "delayReason": "This service has been delayed by congestion",
    "destination": [
     {
      "assocIsCancelled": false,
@@ -13,7 +14,7 @@
     }
    ],
    "detachFront": false,
-   "eta": "On time",
+   "eta": "02:07",
    "filterLocationCancelled": false,
    "futureCancellation": false,
    "futureDelay": false,
@@ -37,9 +38,9 @@
      "callingPoint": [
       {
        "affectedByDiversion": false,
+       "at": "No report",
        "crs": "SWI",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Swindon",
@@ -48,9 +49,10 @@
       },
       {
        "affectedByDiversion": false,
+       "at": "00:42",
        "crs": "KEM",
+       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "On time",
        "isCancelled": false,
        "length": 0,
        "locationName": "Kemble",
@@ -60,8 +62,9 @@
       {
        "affectedByDiversion": false,
        "crs": "STD",
+       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "On time",
+       "et": "01:12",
        "isCancelled": false,
        "length": 0,
        "locationName": "Stroud",
@@ -71,8 +74,9 @@
       {
        "affectedByDiversion": false,
        "crs": "SHU",
+       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "On time",
+       "et": "01:22",
        "isCancelled": false,
        "length": 0,
        "locationName": "Stonehouse",
@@ -82,8 +86,9 @@
       {
        "affectedByDiversion": false,
        "crs": "GCR",
+       "delayReason": "This service has been delayed by congestion",
        "detachFront": false,
-       "et": "On time",
+       "et": "01:47",
        "isCancelled": false,
        "length": 0,
        "locationName": "Gloucester",
